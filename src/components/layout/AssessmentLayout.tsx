@@ -63,11 +63,14 @@ const AssessmentLayout: React.FC<AssessmentLayoutProps> = ({ children }) => {
 
   // Determine current page based on route
   const currentPage = ROUTE_PAGE_MAP[location.pathname] ?? 1;
-  const totalPages = response.totalPages;
+  const totalPages = TOTAL_PAGES;
 
-  // Don't show progress bar on disqualified or results pages
+  // Don't show progress bar on disqualified, waiting list, or results pages
   const showProgress =
-    location.pathname !== '/disqualified' && location.pathname !== '/results';
+    location.pathname !== '/disqualified' &&
+    location.pathname !== '/waiting-list' &&
+    location.pathname !== '/results' &&
+    currentPage > 0;
 
   /**
    * Announce page changes to screen readers
