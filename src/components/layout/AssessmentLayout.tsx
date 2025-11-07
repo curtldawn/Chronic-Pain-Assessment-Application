@@ -25,23 +25,26 @@ interface AssessmentLayoutProps {
  */
 const ROUTE_PAGE_MAP: Record<string, number> = {
   '/': 1,
-  '/diagnosis': 2,
-  '/duration': 3,
-  '/age': 4,
-  '/condition': 5,
-  '/location': 6,
-  '/sensations': 7,
-  '/pain-level': 8,
-  '/triggers': 9,
-  '/impact': 10,
-  '/treatments': 11,
-  '/effectiveness': 12,
-  '/lifestyle': 13,
-  '/wellness': 14,
-  '/support': 15,
-  '/education': 16,
-  '/results': 17,
+  '/cellular-science': 2,
+  '/condition-confirmation': 3,
+  '/treatment-history': 4,
+  '/urgency-assessment': 5,
+  '/budget-qualification': 6,
+  '/affordability': 6, // Same step as budget
+  '/additional-info': 7,
+  '/results': 8,
+  '/process-explanation': 9,
+  '/detailed-process': 10,
+  '/proof-offer-1': 11,
+  '/proof-offer-2': 12,
+  '/lead-capture': 13,
+  '/final-video': 14,
+  '/disqualified': 0, // Don't show progress
+  '/waiting-list': 0, // Don't show progress
 };
+
+// Total number of pages in the assessment flow
+const TOTAL_PAGES = 14;
 
 /**
  * Assessment Layout Component
