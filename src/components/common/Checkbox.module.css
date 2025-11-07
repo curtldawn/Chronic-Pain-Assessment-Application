@@ -13,11 +13,14 @@
 }
 
 .checkbox__wrapper {
-  /* Layout */
+  /* Layout - responsive gap */
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: clamp(10px, 2vw, 16px);
   position: relative;
+  
+  /* Add spacing between checkbox items */
+  margin-bottom: clamp(12px, 2.5vw, 16px);
 }
 
 /**
