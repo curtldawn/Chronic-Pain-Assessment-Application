@@ -110,11 +110,11 @@
   /* Layout */
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: clamp(3px, 0.5vw, 6px);
   flex: 1;
 
-  /* Align with checkbox center */
-  padding-top: 2px;
+  /* Align with checkbox center - accounts for responsive sizing */
+  padding-top: clamp(1px, 0.3vw, 2px);
 }
 
 .checkbox__label {
