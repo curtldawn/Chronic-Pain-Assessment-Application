@@ -38,27 +38,27 @@
 
 /**
  * Custom checkbox box
- * 44x44px minimum touch target with 24x24px visual size
+ * Responsive sizing with minimum touch target
  */
 .checkbox__box {
-  /* Layout - centered 24px box inside 44px touch target */
+  /* Layout - responsive sizing */
   position: relative;
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: clamp(20px, 4vw, 24px);
+  height: clamp(20px, 4vw, 24px);
 
   /* Visual */
   border: 2px solid rgba(226, 211, 163, 1);
-  border-radius: 4px;
+  border-radius: clamp(3px, 0.5vw, 4px);
   background-color: transparent;
 
   /* Interaction */
   cursor: pointer;
   user-select: none;
 
-  /* Touch target expansion */
-  padding: 10px;
-  margin: -10px;
+  /* Touch target expansion - dynamic padding */
+  padding: clamp(8px, 2vw, 10px);
+  margin: clamp(-8px, -2vw, -10px);
 
   /* Ensure at least 44x44px clickable area */
   min-width: 44px;
