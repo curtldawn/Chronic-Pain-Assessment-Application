@@ -66,14 +66,6 @@ export const Q6AnnualSpending = () => {
           <Button variant="secondary" onClick={handleBack}>
             Back
           </Button>
-          <Button
-            variant="primary"
-            size="large"
-            onClick={handleContinue}
-            disabled={!selected}
-          >
-            Continue
-          </Button>
         </div>
       </motion.div>
     </div>
