@@ -83,11 +83,15 @@ export const DisqualifiedNonTreatable = () => {
           <p className={styles.bodyText}>
             The clinical teams behind this research are continuously working to expand the applications of cellular repair to new conditions—but at this time, we don't have proven techniques for:
           </p>
-          <ul className={styles.bulletList}>
-            {nonTreatableLabels.map((label, index) => (
-              <li key={index}>{label}</li>
-            ))}
-          </ul>
+          {displayLabels.length > 0 ? (
+            <ul className={styles.bulletList}>
+              {displayLabels.map((label, index) => (
+                <li key={index}>{label}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className={styles.bodyText}><em>the conditions you selected</em></p>
+          )}
           <p className={styles.bodyText}>
             We'd be happy to notify you if new techniques are developed for your condition in the future.
           </p>
