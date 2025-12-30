@@ -26,9 +26,17 @@ export const DisqualifiedNonTreatable = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
 
+  // Get the non-treatable condition labels
   const nonTreatableLabels = state.nonTreatableConditions
     .map(id => CONDITION_LABELS[id] || id)
     .filter(Boolean);
+
+  // Fallback: if no labels, try to get from selected conditions
+  const displayLabels = nonTreatableLabels.length > 0 
+    ? nonTreatableLabels 
+    : state.conditions
+        .filter(id => Object.keys(CONDITION_LABELS).includes(id))
+        .map(id => CONDITION_LABELS[id] || id);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
