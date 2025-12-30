@@ -111,6 +111,11 @@ const App: React.FC = () => {
             <Route path="/quiz/q6-annual-spending" element={<Q6AnnualSpending />} />
             <Route path="/quiz/q7-open-questions" element={<Q7OpenQuestions />} />
             
+            {/* Congratulations and Welcome */}
+            <Route path="/quiz/congratulations" element={<Congratulations />} />
+            <Route path="/quiz/congratulations-alternative" element={<CongratulationsAlternative />} />
+            <Route path="/quiz/welcome" element={<Welcome />} />
+            
             {/* Catch all - redirect to quiz start */}
             <Route path="*" element={<Navigate to="/quiz/q1-duration" replace />} />
           </Routes>
