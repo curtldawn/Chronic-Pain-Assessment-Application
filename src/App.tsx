@@ -19,6 +19,11 @@ const Q1Duration = React.lazy(() => import('./pages/Quiz/Q1Duration'));
 const DisqualifiedTooSoon = React.lazy(() => import('./pages/Quiz/DisqualifiedTooSoon'));
 const Q2Treatments = React.lazy(() => import('./pages/Quiz/Q2Treatments'));
 const ConnectingMessageQ2 = React.lazy(() => import('./pages/Quiz/ConnectingMessageQ2'));
+const EducationQ2A = React.lazy(() => import('./pages/Quiz/EducationQ2A'));
+const EducationQ2ANone = React.lazy(() => import('./pages/Quiz/EducationQ2ANone'));
+const Q3Conditions = React.lazy(() => import('./pages/Quiz/Q3Conditions'));
+const DisqualifiedNonTreatable = React.lazy(() => import('./pages/Quiz/DisqualifiedNonTreatable'));
+const ManualReview = React.lazy(() => import('./pages/Quiz/ManualReview'));
 
 /**
  * Loading fallback component
