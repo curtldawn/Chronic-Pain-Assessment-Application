@@ -24,6 +24,12 @@ const EducationQ2ANone = React.lazy(() => import('./pages/Quiz/EducationQ2ANone'
 const Q3Conditions = React.lazy(() => import('./pages/Quiz/Q3Conditions'));
 const DisqualifiedNonTreatable = React.lazy(() => import('./pages/Quiz/DisqualifiedNonTreatable'));
 const ManualReview = React.lazy(() => import('./pages/Quiz/ManualReview'));
+const PrimaryCellExplanation = React.lazy(() => import('./pages/Quiz/PrimaryCellExplanation'));
+const AlternativePrimaryCellExplanation = React.lazy(() => import('./pages/Quiz/AlternativePrimaryCellExplanation'));
+const Q4WhatsMissing = React.lazy(() => import('./pages/Quiz/Q4WhatsMissing'));
+const Q5Urgency = React.lazy(() => import('./pages/Quiz/Q5Urgency'));
+const Q6AnnualSpending = React.lazy(() => import('./pages/Quiz/Q6AnnualSpending'));
+const Q7OpenQuestions = React.lazy(() => import('./pages/Quiz/Q7OpenQuestions'));
 
 /**
  * Loading fallback component
