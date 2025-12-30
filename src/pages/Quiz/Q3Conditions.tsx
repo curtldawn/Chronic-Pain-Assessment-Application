@@ -75,10 +75,13 @@ export const Q3Conditions = () => {
       if (analysis.qualification_status === 'disqualified_non_treatable') {
         navigate('/quiz/disqualified-non-treatable');
       } else if (analysis.qualification_status === 'manual_review') {
+        // Manual review always goes to manual review page
         navigate('/quiz/manual-review');
       } else if (analysis.should_show_alternative_primary_cell) {
+        // Alternative primary cell (for "Other" cases that still proceed)
         navigate('/quiz/alternative-primary-cell-explanation');
       } else if (analysis.should_show_primary_cell) {
+        // Standard primary cell explanation
         navigate('/quiz/primary-cell-explanation');
       } else {
         // Fallback
