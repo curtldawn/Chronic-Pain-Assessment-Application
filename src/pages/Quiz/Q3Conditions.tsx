@@ -139,6 +139,7 @@ export const Q3Conditions = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               className={styles.formField}
+              style={{ marginTop: '16px' }}
             >
               <textarea
                 value={otherText}
@@ -148,7 +149,7 @@ export const Q3Conditions = () => {
                 rows={3}
               />
               {otherText.length > 0 && (
-                <p className={styles.helperText}>
+                <p className={styles.helperText} style={{ marginTop: '12px', marginBottom: '0' }}>
                   A practitioner will review your condition and contact you by email to let you know if we can help.
                 </p>
               )}
