@@ -25,10 +25,10 @@ export const Q5Urgency = () => {
   const handleSelect = (id: string) => {
     setSelected(id);
     setUrgencyLevel(id);
-  };
-
-  const handleContinue = () => {
-    navigate('/quiz/q6-annual-spending');
+    // Auto-advance to next question
+    setTimeout(() => {
+      navigate('/quiz/q6-annual-spending');
+    }, 300);
   };
 
   const handleBack = () => {
