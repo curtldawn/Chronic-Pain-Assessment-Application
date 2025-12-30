@@ -66,7 +66,7 @@ export const PrimaryCellExplanation = () => {
       >
         <div className={styles.educationContent}>
           <p className={styles.educationText}>
-            <strong>Good news:</strong> Because you have {conditionText}, there's a strong possibility your pain is caused by subcellular damage—which means it can be repaired.
+            <strong>Good news:</strong> Because you have <strong>{conditionTextFormatted}</strong>, there's a strong possibility your pain is caused by subcellular damage—which means it can be repaired.
           </p>
           <p className={styles.educationText}>
             Researchers have identified what they call your <strong>Primary Cell</strong>—a specialized master cell that controls the pattern and function of all cells in your body.
