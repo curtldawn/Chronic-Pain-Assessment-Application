@@ -105,7 +105,10 @@ export const Q3Conditions = () => {
       const hasTreatable = selected.some(id => treatableIds.has(id));
       const hasNonTreatable = selected.some(id => nonTreatableIds.has(id));
       
-      if (hasOther && !hasTreatable) {
+      // If has "Other" and non-treatable (with or without treatable), go to manual review
+      if (hasOther && hasNonTreatable) {
+        navigate('/quiz/manual-review');
+      } else if (hasOther && !hasTreatable) {
         navigate('/quiz/manual-review');
       } else if (hasNonTreatable && !hasTreatable && !hasOther) {
         navigate('/quiz/disqualified-non-treatable');
