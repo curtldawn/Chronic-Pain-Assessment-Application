@@ -26,17 +26,27 @@ export const PrimaryCellExplanation = () => {
   const navigate = useNavigate();
   const { state } = useQuiz();
 
-  const treatableLabels = state.treatableConditions
+  // Get treatable condition labels - try both sources
+  const treatableLabels = (state.treatableConditions.length > 0 
+    ? state.treatableConditions 
+    : state.conditions.filter(id => CONDITION_LABELS[id])
+  )
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
-  const conditionText = treatableLabels.length > 0 
-    ? treatableLabels.map((label, index) => {
-        if (index === 0) return <strong key={index}>{label}</strong>;
-        if (index === treatableLabels.length - 1) return <span key={index}> and <strong>{label}</strong></span>;
-        return <span key={index}>, <strong>{label}</strong></span>;
-      })
-    : <strong>your condition</strong>;
+  // Format the condition text with proper grammar
+  let conditionTextFormatted = '';
+  if (treatableLabels.length === 0) {
+    conditionTextFormatted = 'your condition';
+  } else if (treatableLabels.length === 1) {
+    conditionTextFormatted = treatableLabels[0];
+  } else if (treatableLabels.length === 2) {
+    conditionTextFormatted = `${treatableLabels[0]} and ${treatableLabels[1]}`;
+  } else {
+    const lastCondition = treatableLabels[treatableLabels.length - 1];
+    const otherConditions = treatableLabels.slice(0, -1).join(', ');
+    conditionTextFormatted = `${otherConditions}, and ${lastCondition}`;
+  }
 
   const handleContinue = () => {
     navigate('/quiz/q4-whats-missing');
