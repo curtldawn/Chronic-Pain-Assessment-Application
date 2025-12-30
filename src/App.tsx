@@ -9,41 +9,16 @@
 
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AssessmentProvider } from '@context/AssessmentContext';
-import AssessmentLayout from '@components/layout/AssessmentLayout';
+import { QuizProvider } from '@context/QuizContext';
 import { useCsrfInit } from './hooks/useCsrf';
 
 /**
- * Lazy-loaded page components for code splitting
- * Pages will be loaded on demand for better performance
+ * Lazy-loaded Quiz pages
  */
-
-/* Assessment Pages (1-8) */
-const LandingPage = React.lazy(() => import('./pages/LandingPage'));
-const CellularSciencePage = React.lazy(() => import('./pages/CellularSciencePage'));
-const ConditionConfirmationPage = React.lazy(() => import('./pages/ConditionConfirmationPage'));
-const TreatmentHistory = React.lazy(() => import('./pages/TreatmentHistory'));
-const UrgencyAssessment = React.lazy(() => import('./pages/UrgencyAssessment'));
-const BudgetQualification = React.lazy(() => import('./pages/BudgetQualification'));
-const AffordabilityCheck = React.lazy(() => import('./pages/AffordabilityCheck'));
-const AdditionalInfo = React.lazy(() => import('./pages/AdditionalInfo'));
-const ResultsPage = React.lazy(() => import('./pages/ResultsPage'));
-
-/* Exit Pages */
-const DisqualificationPage = React.lazy(() => import('./pages/DisqualificationPage'));
-const WaitingListPage = React.lazy(() => import('./pages/WaitingListPage'));
-
-/* Educational Flow Pages (9-10) */
-const ProcessExplanation = React.lazy(() => import('./pages/ProcessExplanation'));
-const DetailedProcess = React.lazy(() => import('./pages/DetailedProcess'));
-
-/* Proof Offer Pages (11-12) */
-const ProofOffer1 = React.lazy(() => import('./pages/ProofOffer1'));
-const ProofOffer2 = React.lazy(() => import('./pages/ProofOffer2'));
-
-/* Lead Capture & Final Pages (13-14) */
-const LeadCapture = React.lazy(() => import('./pages/LeadCapture'));
-const FinalVideoPage = React.lazy(() => import('./pages/FinalVideoPage'));
+const Q1Duration = React.lazy(() => import('./pages/Quiz/Q1Duration'));
+const DisqualifiedTooSoon = React.lazy(() => import('./pages/Quiz/DisqualifiedTooSoon'));
+const Q2Treatments = React.lazy(() => import('./pages/Quiz/Q2Treatments'));
+const ConnectingMessageQ2 = React.lazy(() => import('./pages/Quiz/ConnectingMessageQ2'));
 
 /**
  * Loading fallback component
