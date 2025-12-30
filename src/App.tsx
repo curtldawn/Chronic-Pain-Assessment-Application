@@ -82,15 +82,31 @@ const App: React.FC = () => {
           <Routes>
             {/* New Quiz Routes */}
             <Route path="/" element={<Navigate to="/quiz/q1-duration" replace />} />
+            
+            {/* Q1 and Disqualification */}
             <Route path="/quiz/q1-duration" element={<Q1Duration />} />
             <Route path="/quiz/disqualified-too-soon" element={<DisqualifiedTooSoon />} />
+            
+            {/* Q2 and Educational Responses */}
             <Route path="/quiz/q2-treatments" element={<Q2Treatments />} />
             <Route path="/quiz/connecting-message-q2" element={<ConnectingMessageQ2 />} />
             <Route path="/quiz/education-q2a" element={<EducationQ2A />} />
             <Route path="/quiz/education-q2a-none" element={<EducationQ2ANone />} />
+            
+            {/* Q3 and Routing Pages */}
             <Route path="/quiz/q3-conditions" element={<Q3Conditions />} />
             <Route path="/quiz/disqualified-non-treatable" element={<DisqualifiedNonTreatable />} />
             <Route path="/quiz/manual-review" element={<ManualReview />} />
+            
+            {/* Primary Cell Explanations */}
+            <Route path="/quiz/primary-cell-explanation" element={<PrimaryCellExplanation />} />
+            <Route path="/quiz/alternative-primary-cell-explanation" element={<AlternativePrimaryCellExplanation />} />
+            
+            {/* Q4-Q7 */}
+            <Route path="/quiz/q4-whats-missing" element={<Q4WhatsMissing />} />
+            <Route path="/quiz/q5-urgency" element={<Q5Urgency />} />
+            <Route path="/quiz/q6-annual-spending" element={<Q6AnnualSpending />} />
+            <Route path="/quiz/q7-open-questions" element={<Q7OpenQuestions />} />
             
             {/* Catch all - redirect to quiz start */}
             <Route path="*" element={<Navigate to="/quiz/q1-duration" replace />} />
