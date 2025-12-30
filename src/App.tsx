@@ -30,6 +30,9 @@ const Q4WhatsMissing = React.lazy(() => import('./pages/Quiz/Q4WhatsMissing'));
 const Q5Urgency = React.lazy(() => import('./pages/Quiz/Q5Urgency'));
 const Q6AnnualSpending = React.lazy(() => import('./pages/Quiz/Q6AnnualSpending'));
 const Q7OpenQuestions = React.lazy(() => import('./pages/Quiz/Q7OpenQuestions'));
+const Congratulations = React.lazy(() => import('./pages/Quiz/Congratulations'));
+const CongratulationsAlternative = React.lazy(() => import('./pages/Quiz/CongratulationsAlternative'));
+const Welcome = React.lazy(() => import('./pages/Quiz/Welcome'));
 
 /**
  * Loading fallback component
