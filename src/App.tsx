@@ -80,9 +80,24 @@ const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <AssessmentProvider>
+      <QuizProvider>
         <React.Suspense fallback={<LoadingFallback />}>
           <Routes>
+            {/* New Quiz Routes */}
+            <Route path="/" element={<Navigate to="/quiz/q1-duration" replace />} />
+            <Route path="/quiz/q1-duration" element={<Q1Duration />} />
+            <Route path="/quiz/disqualified-too-soon" element={<DisqualifiedTooSoon />} />
+            <Route path="/quiz/q2-treatments" element={<Q2Treatments />} />
+            <Route path="/quiz/connecting-message-q2" element={<ConnectingMessageQ2 />} />
+            
+            {/* Catch all - redirect to quiz start */}
+            <Route path="*" element={<Navigate to="/quiz/q1-duration" replace />} />
+          </Routes>
+        </React.Suspense>
+      </QuizProvider>
+    </BrowserRouter>
+  );
+};
             {/* Page 1: Landing Page - Initial Qualification */}
             <Route path="/" element={<LandingPage />} />
             <Route path="/waiting-list" element={<WaitingListPage />} />
