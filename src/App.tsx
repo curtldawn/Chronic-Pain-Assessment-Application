@@ -80,6 +80,11 @@ const App: React.FC = () => {
             <Route path="/quiz/disqualified-too-soon" element={<DisqualifiedTooSoon />} />
             <Route path="/quiz/q2-treatments" element={<Q2Treatments />} />
             <Route path="/quiz/connecting-message-q2" element={<ConnectingMessageQ2 />} />
+            <Route path="/quiz/education-q2a" element={<EducationQ2A />} />
+            <Route path="/quiz/education-q2a-none" element={<EducationQ2ANone />} />
+            <Route path="/quiz/q3-conditions" element={<Q3Conditions />} />
+            <Route path="/quiz/disqualified-non-treatable" element={<DisqualifiedNonTreatable />} />
+            <Route path="/quiz/manual-review" element={<ManualReview />} />
             
             {/* Catch all - redirect to quiz start */}
             <Route path="*" element={<Navigate to="/quiz/q1-duration" replace />} />
