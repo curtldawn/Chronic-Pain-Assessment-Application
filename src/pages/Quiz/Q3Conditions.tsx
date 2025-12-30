@@ -48,6 +48,9 @@ export const Q3Conditions = () => {
     setConditions(selected);
     setConditionOther(otherText);
 
+    // Check if "Other" was filled in
+    const hasOther = showOtherField && otherText.trim().length > 0;
+
     // Analyze conditions via backend
     try {
       const response = await fetch('/api/quiz/analyze-conditions', {
@@ -55,7 +58,7 @@ export const Q3Conditions = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           conditions: selected,
-          condition_other: otherText,
+          condition_other: hasOther ? otherText : null,
         }),
       });
 
@@ -71,17 +74,41 @@ export const Q3Conditions = () => {
       // Route based on analysis
       if (analysis.qualification_status === 'disqualified_non_treatable') {
         navigate('/quiz/disqualified-non-treatable');
-      } else if (analysis.qualification_status === 'manual_review' && !analysis.treatable_conditions.length) {
+      } else if (analysis.qualification_status === 'manual_review') {
         navigate('/quiz/manual-review');
       } else if (analysis.should_show_alternative_primary_cell) {
-        navigate('/quiz/manual-review');
+        navigate('/quiz/alternative-primary-cell-explanation');
       } else if (analysis.should_show_primary_cell) {
+        navigate('/quiz/primary-cell-explanation');
+      } else {
+        // Fallback
         navigate('/quiz/primary-cell-explanation');
       }
     } catch (error) {
       console.error('Error analyzing conditions:', error);
-      // Fallback routing
-      navigate('/quiz/primary-cell-explanation');
+      
+      // Fallback routing based on client-side logic
+      const treatableIds = new Set([
+        'chronic_back_pain', 'chronic_neck_pain', 'bone_on_bone_joint_pain',
+        'old_injury_pain', 'herniated_bulging_disc', 'sciatica_constant',
+        'spinal_stenosis_spondylosis', 'si_joint_pain', 'pelvic_pain', 'mystery_pain'
+      ]);
+      
+      const nonTreatableIds = new Set([
+        'chronic_fatigue_syndrome', 'autoimmune_diseases', 'fibromyalgia',
+        'infectious_diseases', 'endocrine_disorders', 'gastrointestinal_disorders'
+      ]);
+      
+      const hasTreatable = selected.some(id => treatableIds.has(id));
+      const hasNonTreatable = selected.some(id => nonTreatableIds.has(id));
+      
+      if (hasOther && !hasTreatable) {
+        navigate('/quiz/manual-review');
+      } else if (hasNonTreatable && !hasTreatable && !hasOther) {
+        navigate('/quiz/disqualified-non-treatable');
+      } else {
+        navigate('/quiz/primary-cell-explanation');
+      }
     }
   };
 
