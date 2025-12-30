@@ -25,10 +25,10 @@ export const Q6AnnualSpending = () => {
   const handleSelect = (id: string) => {
     setSelected(id);
     setAnnualSpending(id);
-  };
-
-  const handleContinue = () => {
-    navigate('/quiz/q7-open-questions');
+    // Auto-advance to next question
+    setTimeout(() => {
+      navigate('/quiz/q7-open-questions');
+    }, 300);
   };
 
   const handleBack = () => {
