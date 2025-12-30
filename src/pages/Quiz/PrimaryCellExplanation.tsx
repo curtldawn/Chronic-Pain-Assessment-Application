@@ -31,8 +31,12 @@ export const PrimaryCellExplanation = () => {
     .filter(Boolean);
 
   const conditionText = treatableLabels.length > 0 
-    ? treatableLabels.join(', ')
-    : 'your condition';
+    ? treatableLabels.map((label, index) => {
+        if (index === 0) return <strong key={index}>{label}</strong>;
+        if (index === treatableLabels.length - 1) return <span key={index}> and <strong>{label}</strong></span>;
+        return <span key={index}>, <strong>{label}</strong></span>;
+      })
+    : <strong>your condition</strong>;
 
   const handleContinue = () => {
     navigate('/quiz/q4-whats-missing');
