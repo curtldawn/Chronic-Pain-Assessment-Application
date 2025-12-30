@@ -31,21 +31,21 @@ const LoadingFallback: React.FC = () => (
       justifyContent: 'center',
       alignItems: 'center',
       minHeight: '100vh',
-      backgroundColor: 'var(--color-secondary-cream)',
+      backgroundColor: '#f7f4ed',
     }}
   >
     <div
       style={{
         textAlign: 'center',
-        color: 'var(--color-primary-navy)',
+        color: '#1d2c49',
       }}
     >
       <div
         style={{
           width: '48px',
           height: '48px',
-          border: '4px solid var(--color-gray-300)',
-          borderTopColor: 'var(--color-primary-navy)',
+          border: '4px solid #e5e7eb',
+          borderTopColor: '#1d2c49',
           borderRadius: '50%',
           animation: 'spin 1s linear infinite',
           margin: '0 auto 16px',
@@ -55,20 +55,6 @@ const LoadingFallback: React.FC = () => (
     </div>
   </div>
 );
-
-/**
- * Route guard component for qualification-protected routes
- * Redirects to disqualified page if user is not qualified
- */
-interface ProtectedRouteProps {
-  children: React.ReactElement;
-}
-
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
-  // In a real implementation, this would check qualification status from context
-  // For now, we'll render the children as the context will handle the logic
-  return children;
-};
 
 /**
  * Main App Component
@@ -95,161 +81,6 @@ const App: React.FC = () => {
           </Routes>
         </React.Suspense>
       </QuizProvider>
-    </BrowserRouter>
-  );
-};
-            {/* Page 1: Landing Page - Initial Qualification */}
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/waiting-list" element={<WaitingListPage />} />
-
-            {/* Page 2: Cellular Science & Condition Selection */}
-            <Route
-              path="/cellular-science"
-              element={
-                <AssessmentLayout>
-                  <CellularSciencePage />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Disqualification Page */}
-            <Route path="/disqualified" element={<DisqualificationPage />} />
-
-            {/* Page 3: Condition Confirmation */}
-            <Route
-              path="/condition-confirmation"
-              element={
-                <AssessmentLayout>
-                  <ConditionConfirmationPage />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 4: Treatment History */}
-            <Route
-              path="/treatment-history"
-              element={
-                <AssessmentLayout>
-                  <TreatmentHistory />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 5: Urgency Assessment */}
-            <Route
-              path="/urgency-assessment"
-              element={
-                <AssessmentLayout>
-                  <UrgencyAssessment />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 6: Budget Qualification */}
-            <Route
-              path="/budget-qualification"
-              element={
-                <AssessmentLayout>
-                  <BudgetQualification />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 6B: Affordability Check (conditional from Page 6) */}
-            <Route
-              path="/affordability"
-              element={
-                <AssessmentLayout>
-                  <AffordabilityCheck />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 7: Additional Information */}
-            <Route
-              path="/additional-info"
-              element={
-                <AssessmentLayout>
-                  <AdditionalInfo />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 8: Personalized Results Page */}
-            <Route
-              path="/results"
-              element={
-                <AssessmentLayout>
-                  <ResultsPage />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 9: Process Explanation */}
-            <Route
-              path="/process-explanation"
-              element={
-                <AssessmentLayout>
-                  <ProcessExplanation />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 10: Detailed 4-Step Process */}
-            <Route
-              path="/detailed-process"
-              element={
-                <AssessmentLayout>
-                  <DetailedProcess />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 11: Proof Offer 1 - Highlights Video */}
-            <Route
-              path="/proof-offer-1"
-              element={
-                <AssessmentLayout>
-                  <ProofOffer1 />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 12: Proof Offer 2 - Demo Video */}
-            <Route
-              path="/proof-offer-2"
-              element={
-                <AssessmentLayout>
-                  <ProofOffer2 />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 13: Lead Capture Form */}
-            <Route
-              path="/lead-capture"
-              element={
-                <AssessmentLayout>
-                  <LeadCapture />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Page 14: Final Video & Confirmation */}
-            <Route
-              path="/final-video"
-              element={
-                <AssessmentLayout>
-                  <FinalVideoPage />
-                </AssessmentLayout>
-              }
-            />
-
-            {/* Catch-all redirect to home */}
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </React.Suspense>
-      </AssessmentProvider>
 
       {/* Global styles for spinner animation */}
       <style>
