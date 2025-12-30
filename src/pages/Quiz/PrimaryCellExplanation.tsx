@@ -83,12 +83,14 @@ export const PrimaryCellExplanation = () => {
             <strong>This isn't pain management—this is fixing the subcellular source by repairing your Primary Cell.</strong>
           </p>
           
-          <p className={styles.disclaimerText}>
-            *Based on clinical observations and ongoing research
-          </p>
-          <p className={styles.disclaimerText}>
-            **Journal of Prenatal & Perinatal Psychology & Health, published 11-03-2024
-          </p>
+          <div style={{ marginTop: '24px' }}>
+            <p className={styles.disclaimerText} style={{ marginBottom: '4px' }}>
+              *Based on clinical observations and ongoing research
+            </p>
+            <p className={styles.disclaimerText} style={{ marginBottom: '0' }}>
+              **Journal of Prenatal & Perinatal Psychology & Health, published 11-03-2024
+            </p>
+          </div>
 
           <div className={styles.navigationButtons}>
             <Button variant="secondary" onClick={handleBack}>
