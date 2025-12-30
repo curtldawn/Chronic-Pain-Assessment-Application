@@ -328,3 +328,62 @@
     padding: 24px 16px;
   }
 }
+
+/* Congratulations Pages */
+.congratsHeadline {
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
+  font-weight: 600;
+  color: rgba(29, 44, 73, 1);
+  margin: 0 0 32px 0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.congratsContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.consentSection {
+  margin: 24px 0;
+  padding: 16px;
+  background: rgba(226, 211, 163, 0.1);
+  border-radius: 8px;
+}
+
+/* Welcome Page */
+.welcomeContent {
+  max-width: 100%;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 32px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.videoIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.ctaSection {
+  margin-top: 48px;
+}
+
+.calendarPlaceholder {
+  margin: 32px 0;
+  padding: 48px 24px;
+  border: 2px dashed rgba(226, 211, 163, 1);
+  border-radius: 12px;
+  background: rgba(226, 211, 163, 0.05);
+}
