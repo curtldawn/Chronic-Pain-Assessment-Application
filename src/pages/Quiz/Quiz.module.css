@@ -226,6 +226,31 @@
   box-shadow: 0 0 0 3px rgba(29, 44, 73, 0.1);
 }
 
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid rgba(229, 231, 235, 1);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: rgba(29, 44, 73, 1);
+  box-shadow: 0 0 0 3px rgba(29, 44, 73, 0.1);
+}
+
+.disclaimerText {
+  font-size: 0.875rem;
+  color: rgba(107, 114, 128, 1);
+  font-style: italic;
+  margin: 24px 0 0 0;
+}
+
 /* Navigation Buttons */
 .navigationButtons {
   display: flex;
