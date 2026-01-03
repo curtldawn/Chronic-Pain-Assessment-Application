@@ -35,7 +35,7 @@ export const Congratulations = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [consentToText, setConsentToText] = useState(true);
+  const [consentToText, setConsentToText] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const treatableLabels = (state.treatableConditions.length > 0 
