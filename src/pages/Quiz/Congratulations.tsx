@@ -40,12 +40,15 @@ export const Congratulations = () => {
 
   const treatableLabels = (state.treatableConditions.length > 0 
     ? state.treatableConditions 
-    : state.conditions.filter(id => CONDITION_LABELS[id])
+    : state.conditions.filter(id => CONDITION_LABELS[id] && !['chronic_fatigue_syndrome', 'autoimmune_diseases', 'fibromyalgia', 'infectious_diseases', 'endocrine_disorders', 'gastrointestinal_disorders'].includes(id))
   )
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
-  const nonTreatableLabels = state.nonTreatableConditions
+  const nonTreatableLabels = (state.nonTreatableConditions.length > 0
+    ? state.nonTreatableConditions
+    : state.conditions.filter(id => ['chronic_fatigue_syndrome', 'autoimmune_diseases', 'fibromyalgia', 'infectious_diseases', 'endocrine_disorders', 'gastrointestinal_disorders'].includes(id))
+  )
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
