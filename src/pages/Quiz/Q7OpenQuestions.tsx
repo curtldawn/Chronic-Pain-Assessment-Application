@@ -19,9 +19,13 @@ export const Q7OpenQuestions = () => {
     setOpenQuestions(questions);
     
     // Route to appropriate congratulations page
-    // Only go to alternative if manual review OR user filled in "Other" condition text
+    // Go to Alternative Congratulations if:
+    // 1. User has "Other" condition text filled in, OR
+    // 2. User went through manual review, OR  
+    // 3. User requires manual review flag is set
     const hasOtherCondition = state.conditionOther && state.conditionOther.trim().length > 0;
-    if (state.qualificationStatus === 'manual_review' || (hasOtherCondition && state.requiresManualReview)) {
+    
+    if (hasOtherCondition || state.requiresManualReview || state.qualificationStatus === 'manual_review') {
       navigate('/quiz/congratulations-alternative');
     } else {
       navigate('/quiz/congratulations');
