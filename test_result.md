@@ -18,8 +18,8 @@
 4. Consent text should show new legal verbiage
 
 ## Last Test Run
-- Date: Session in progress
-- Status: Verifying routing and form validation
+- Date: January 4, 2026 - Session 4 Testing Complete
+- Status: Comprehensive testing of "Other" condition routing and form validation completed
 
 ### Test Results Summary:
 
@@ -30,13 +30,19 @@
 4. **Backend API Integration**: ✅ PASSED - The `/api/quiz/analyze-conditions` endpoint is working correctly and returning proper routing decisions
 5. **Quiz Flow Navigation**: ✅ PASSED - Complete quiz flow from Q1 through Q7 works correctly with proper page transitions
 6. **Form Interactions**: ✅ PASSED - All form elements (checkboxes, buttons, textarea) are working correctly
+7. **"Other" Condition API Logic**: ✅ PASSED - Backend correctly analyzes "Other" only conditions and returns `manual_review` status with `should_show_alternative_primary_cell: true`
+8. **"Other" + Non-Treatable API Logic**: ✅ PASSED - Backend correctly handles mixed conditions (Other + Chronic Fatigue Syndrome) and routes to alternative flow
+9. **Manual Review Page**: ✅ PASSED - Manual Review page loads correctly with proper messaging for "Other" conditions
+10. **Alternative Primary Cell Explanation**: ✅ PASSED - Alternative Primary Cell Explanation page loads correctly and routes to Q4
+11. **Form Validation on Congratulations Pages**: ✅ PASSED - Submit button is properly disabled/enabled based on form completion and consent checkbox
+12. **Consent Text Legal Verbiage**: ✅ PASSED - Consent text contains correct legal language: "By providing my phone number, I agree to receive marketing text messages from Primary Cell..."
 
 #### ❌ FAILED TESTS:
 1. **Grammar - "and" between conditions**: ❌ FAILED - Condition text shows "your conditions" instead of "chronic back pain and pelvic pain". The formatListWithAnd function exists but the specific conditions are not being displayed in the congratulations text.
 2. **Congratulations Page Content**: ❌ FAILED - The congratulations page appears to be rendering with blank/empty content in some cases, showing only generic "your conditions" text instead of the specific selected conditions.
 
 #### ⚠️ PARTIAL SUCCESS:
-1. **Alternative Routing**: ⚠️ PARTIAL - "Other" condition routing goes through manual-review first, then to alternative-primary-cell-explanation, but there may be inconsistencies in the final routing to congratulations-alternative page.
+1. **Complete "Other" Flow Routing**: ⚠️ PARTIAL - The routing logic is correct and working properly. "Other" conditions correctly route through Alternative Primary Cell Explanation → Q4-Q7. However, the final routing to congratulations-alternative depends on quiz state being properly maintained throughout the flow. When navigating directly to later pages (Q6/Q7), the state is reset and defaults to standard congratulations.
 
 ### Technical Issues Identified:
 1. **Condition Display Logic**: The congratulations page is not properly displaying the specific selected conditions (chronic back pain, pelvic pain) in the condition text
