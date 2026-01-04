@@ -190,23 +190,27 @@ export const Congratulations = () => {
             </div>
 
             <div className={styles.consentSection}>
-              <p style={{ fontSize: '0.875rem', color: 'rgba(107, 114, 128, 1)', marginBottom: '12px', lineHeight: '1.5' }}>
-                Pain relief decisions are easier when your questions get answered quickly. Get text-only answers—no calls—so you can quickly see whether cellular repair is the right fit for you.
-              </p>
               <label className={styles.checkboxLabel} style={{ border: 'none', padding: '8px 0' }}>
                 <input
                   type="checkbox"
                   checked={consentToText}
                   onChange={(e) => setConsentToText(e.target.checked)}
                   className={styles.checkbox}
+                  required
                 />
                 <span className={styles.checkboxText} style={{ fontSize: '0.875rem', color: 'rgba(107, 114, 128, 1)' }}>
-                  I consent to receive text messages. Standard message and data rates may apply.
+                  By providing my phone number, I agree to receive marketing text messages from Primary Cell at the number provided, including via automated technology. Message frequency may vary. Message and data rates may apply. Consent is not a condition of purchase. Reply STOP to opt out and HELP for help. <span className={styles.required}>*</span>
                 </span>
               </label>
             </div>
 
-            <Button type="submit" variant="primary" size="large" fullWidth disabled={isSubmitting}>
+            <Button 
+              type="submit" 
+              variant="primary" 
+              size="large" 
+              fullWidth 
+              disabled={isSubmitting || !consentToText || !name.trim() || !email.trim() || !phone.trim()}
+            >
               {isSubmitting ? 'Submitting...' : 'Watch Chad\'s Case Study Now'}
             </Button>
           </form>
