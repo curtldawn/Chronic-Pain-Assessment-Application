@@ -137,7 +137,7 @@ export const CongratulationsAlternative = () => {
 
           {hasNonTreatable && (
             <p className={styles.bodyText}>
-              However, techniques to address <strong>{nonTreatableLabels.join(', ')}</strong> do not currently exist. And the clinical teams are continuously researching new solutions.
+              However, techniques to address <strong>{nonTreatableText}</strong> do not currently exist. And the clinical teams are continuously researching new solutions.
             </p>
           )}
 
@@ -148,7 +148,7 @@ export const CongratulationsAlternative = () => {
             Watch the case study of Chad—a client who had 5 years of severe degenerative bone-on-bone neck pain that made him nauseous, grumpy, and unable to function.
           </p>
           <p className={styles.bodyText}>You'll see:</p>
-          <ul className={styles.bulletList}>
+          <ul className={styles.bulletList} style={{ listStyleType: 'disc' }}>
             <li>Highlights from his Pain Consultation—sharing his fight to push through pain just to perform at work each day</li>
             <li>An unedited demonstration of the cellular repair process</li>
             <li>The exact moment he realizes his pain is completely gone</li>
