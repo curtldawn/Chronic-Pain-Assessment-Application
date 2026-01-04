@@ -29,6 +29,24 @@ const CONDITION_LABELS: Record<string, string> = {
   gastrointestinal_disorders: 'gastrointestinal disorders',
 };
 
+// Non-treatable condition IDs
+const NON_TREATABLE_IDS = [
+  'chronic_fatigue_syndrome',
+  'autoimmune_diseases',
+  'fibromyalgia',
+  'infectious_diseases',
+  'endocrine_disorders',
+  'gastrointestinal_disorders',
+];
+
+// Helper function to format list with "and" before last item
+const formatListWithAnd = (items: string[]): string => {
+  if (items.length === 0) return '';
+  if (items.length === 1) return items[0];
+  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+};
+
 export const CongratulationsAlternative = () => {
   const navigate = useNavigate();
   const { state, setContactInfo } = useQuiz();
