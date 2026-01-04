@@ -62,7 +62,7 @@ export const Welcome = () => {
             <p className={styles.bodyText}>
               <strong>On this call, we'll:</strong>
             </p>
-            <ul className={styles.bulletList}>
+            <ul className={styles.bulletList} style={{ listStyleType: 'disc' }}>
               <li>Discuss your specific pain condition in detail</li>
               <li>Map out your personalized pain relief plan</li>
               <li>Answer any questions you have</li>
