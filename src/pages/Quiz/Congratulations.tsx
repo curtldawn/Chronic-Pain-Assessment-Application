@@ -181,7 +181,7 @@ export const Congratulations = () => {
             </div>
 
             <div className={styles.consentSection}>
-              <p className={styles.bodyText} style={{ marginBottom: '12px' }}>
+              <p style={{ fontSize: '0.875rem', color: 'rgba(107, 114, 128, 1)', marginBottom: '12px', lineHeight: '1.5' }}>
                 Pain relief decisions are easier when your questions get answered quickly. Get text-only answers—no calls—so you can quickly see whether cellular repair is the right fit for you.
               </p>
               <label className={styles.checkboxLabel} style={{ border: 'none', padding: '8px 0' }}>
