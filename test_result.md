@@ -6,30 +6,20 @@
 - Verify Congratulations pages display correctly
 
 ## Current Testing Focus
-### Issues Being Fixed (Session 2):
-1. **Headline centering**: Center "Based on your answers..." headline on Congratulations page
-2. **Routing bug**: Users selecting only treatable conditions were being routed to Alternative page
-3. **Grammar fix**: Add "and" between last two conditions in lists
-4. **Traditional bullets**: Add bullet points (•) to case study lists
-5. **CongratulationsAlternative separation**: Separate treatable from non-treatable conditions
-6. **Welcome page bullets**: Add traditional bullet points to consultation list
+### Issues Being Fixed (Session 3):
+1. **Routing for "Other" conditions**: Users with "Other" + non-treatable OR "Other" only should go to Alternative Congratulations
+2. **Form validation**: Require consent checkbox + all fields before proceeding to Welcome page
+3. **Consent text update**: Updated legal verbiage for phone consent
 
 ### Test Scenarios Needed:
-1. Complete quiz flow with only treatable conditions → Should go to /quiz/congratulations (NOT alternative)
-2. Complete quiz flow with "Other" condition → Should go to /quiz/congratulations-alternative
-3. Verify condition lists use "and" before last item
-4. Verify bullet points display as traditional (•) not custom styling
-5. Verify CongratulationsAlternative properly separates treatable from non-treatable
-
-## Incorporate User Feedback
-- User requested traditional bullet points
-- User reported routing bug when selecting only treatable conditions
-- User requested "and" between last two conditions
+1. "Other" ONLY → Manual Review → Alt Primary Cell → Q4-7 → Should go to /quiz/congratulations-alternative
+2. "Other" + non-treatable → Manual Review → Alt Primary Cell → Q4-7 → Should go to /quiz/congratulations-alternative
+3. Form validation: Button should be disabled until all fields + checkbox are filled
+4. Consent text should show new legal verbiage
 
 ## Last Test Run
-- Date: January 4, 2026
-- Status: COMPLETED - Direct page testing performed
-- Tester: Testing Agent
+- Date: Session in progress
+- Status: Verifying routing and form validation
 
 ### Test Results Summary:
 
