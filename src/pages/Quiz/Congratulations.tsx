@@ -60,7 +60,8 @@ export const Congratulations = () => {
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
-  const conditionText = treatableLabels.length > 0 ? treatableLabels.join(', ') : 'your conditions';
+  const conditionText = treatableLabels.length > 0 ? formatListWithAnd(treatableLabels) : 'your conditions';
+  const nonTreatableText = formatListWithAnd(nonTreatableLabels);
   const hasNonTreatable = nonTreatableLabels.length > 0;
 
   const handleSubmit = async (e: React.FormEvent) => {
