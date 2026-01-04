@@ -186,6 +186,7 @@
 .bulletList {
   margin: 20px 0;
   padding-left: 24px;
+  list-style-type: disc;
 }
 
 .bulletList li {
@@ -193,6 +194,7 @@
   line-height: 1.7;
   color: rgba(29, 44, 73, 1);
   margin-bottom: 8px;
+  display: list-item;
 }
 
 /* Contact Form */
