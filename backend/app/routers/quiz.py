@@ -213,12 +213,18 @@ def analyze_conditions(conditions: List[str], has_other: bool = False) -> QuizAn
     )
 
 
+class ConditionAnalysisRequest(BaseModel):
+    """Request model for condition analysis"""
+    conditions: List[str]
+    condition_other: Optional[str] = None
+
+
 # ============================================================================
 # API ENDPOINTS
 # ============================================================================
 
 @router.post("/analyze-conditions")
-async def analyze_conditions_endpoint(conditions: List[str], condition_other: Optional[str] = None):
+async def analyze_conditions_endpoint(request: ConditionAnalysisRequest):
     """
     Analyze selected conditions and return routing information
     
@@ -227,8 +233,8 @@ async def analyze_conditions_endpoint(conditions: List[str], condition_other: Op
     - Which educational page to show
     - Whether manual review is needed
     """
-    has_other = bool(condition_other and condition_other.strip())
-    analysis = analyze_conditions(conditions, has_other)
+    has_other = bool(request.condition_other and request.condition_other.strip())
+    analysis = analyze_conditions(request.conditions, has_other)
     
     return analysis
 
