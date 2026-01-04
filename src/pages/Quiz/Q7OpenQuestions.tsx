@@ -19,7 +19,9 @@ export const Q7OpenQuestions = () => {
     setOpenQuestions(questions);
     
     // Route to appropriate congratulations page
-    if (state.qualificationStatus === 'manual_review' || state.conditionOther) {
+    // Only go to alternative if manual review OR user filled in "Other" condition text
+    const hasOtherCondition = state.conditionOther && state.conditionOther.trim().length > 0;
+    if (state.qualificationStatus === 'manual_review' || (hasOtherCondition && state.requiresManualReview)) {
       navigate('/quiz/congratulations-alternative');
     } else {
       navigate('/quiz/congratulations');
