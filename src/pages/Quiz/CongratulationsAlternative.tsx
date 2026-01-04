@@ -58,18 +58,22 @@ export const CongratulationsAlternative = () => {
 
   const treatableLabels = (state.treatableConditions.length > 0 
     ? state.treatableConditions 
-    : state.conditions.filter(id => CONDITION_LABELS[id])
+    : state.conditions.filter(id => CONDITION_LABELS[id] && !NON_TREATABLE_IDS.includes(id))
   )
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
-  const nonTreatableLabels = state.nonTreatableConditions
+  const nonTreatableLabels = (state.nonTreatableConditions.length > 0
+    ? state.nonTreatableConditions
+    : state.conditions.filter(id => NON_TREATABLE_IDS.includes(id))
+  )
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
   const hasTreatable = treatableLabels.length > 0;
   const hasNonTreatable = nonTreatableLabels.length > 0;
-  const conditionText = treatableLabels.join(', ');
+  const conditionText = formatListWithAnd(treatableLabels);
+  const nonTreatableText = formatListWithAnd(nonTreatableLabels);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
