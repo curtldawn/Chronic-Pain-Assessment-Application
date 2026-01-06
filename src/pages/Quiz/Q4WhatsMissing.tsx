@@ -60,10 +60,10 @@ export const Q4WhatsMissing = () => {
         transition={{ duration: 0.5 }}
       >
         <div className={styles.questionSection}>
-          <h2 className={styles.question}>
+          <h2 className={styles.question} style={{ textAlign: 'center' }}>
             If your chronic pain were eliminated, what would that give you back? What could you do that you can't do now (or can't do well)?
           </h2>
-          <p className={styles.helperText}>(Select all that apply)</p>
+          <p className={styles.helperText} style={{ textAlign: 'center' }}>(Select all that apply)</p>
 
           <div className={styles.checkboxGrid}>
             {ACTIVITIES.map((activity) => (

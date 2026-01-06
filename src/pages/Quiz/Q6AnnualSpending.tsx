@@ -44,7 +44,7 @@ export const Q6AnnualSpending = () => {
         transition={{ duration: 0.5 }}
       >
         <div className={styles.questionSection}>
-          <h2 className={styles.question}>
+          <h2 className={styles.question} style={{ textAlign: 'center' }}>
             On average, how much do you currently pay out of pocket for your chronic pain every year (co-pays, deductibles, treatments not covered by insurance, etc.)?
           </h2>
 

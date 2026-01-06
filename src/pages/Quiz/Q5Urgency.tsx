@@ -44,7 +44,7 @@ export const Q5Urgency = () => {
         transition={{ duration: 0.5 }}
       >
         <div className={styles.questionSection}>
-          <h2 className={styles.question}>
+          <h2 className={styles.question} style={{ textAlign: 'center' }}>
             How urgent is your need to resolve your chronic pain issue?
           </h2>
 

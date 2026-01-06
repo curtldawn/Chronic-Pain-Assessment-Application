@@ -137,10 +137,10 @@ export const Q3Conditions = () => {
         transition={{ duration: 0.5 }}
       >
         <div className={styles.questionSection}>
-          <h2 className={styles.question}>
+          <h2 className={styles.question} style={{ textAlign: 'center' }}>
             Which condition(s) are you dealing with?
           </h2>
-          <p className={styles.helperText}>(Select all that apply)</p>
+          <p className={styles.helperText} style={{ textAlign: 'center' }}>(Select all that apply)</p>
 
           <div className={styles.checkboxGrid}>
             {CONDITIONS.map((condition) => (

@@ -45,10 +45,10 @@ export const Q7OpenQuestions = () => {
         transition={{ duration: 0.5 }}
       >
         <div className={styles.questionSection}>
-          <h2 className={styles.question}>
+          <h2 className={styles.question} style={{ textAlign: 'center' }}>
             What questions do you have about cellular repair?
           </h2>
-          <p className={styles.helperText}>(Leave blank if none)</p>
+          <p className={styles.helperText} style={{ textAlign: 'center' }}>(Leave blank if none)</p>
 
           <textarea
             value={questions}
