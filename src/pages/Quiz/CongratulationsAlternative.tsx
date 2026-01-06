@@ -141,7 +141,7 @@ export const CongratulationsAlternative = () => {
             </p>
           )}
 
-          <p className={styles.bodyText}>
+          <p className={styles.bodyText} style={{ textAlign: 'center' }}>
             <strong>To learn how we reduce or eliminate chronic pain:</strong>
           </p>
           <p className={styles.bodyText}>
@@ -156,12 +156,12 @@ export const CongratulationsAlternative = () => {
           </ul>
 
           <p className={styles.bodyText}>
-            Most people know if we're the right solution by the end of the video because they see the whole process.
+            <strong>Most people know if we're the right solution by the end of the video because they see the whole process.</strong>
           </p>
           <p className={styles.bodyText}>
             We'll email you the link so you can rewatch it anytime.
           </p>
-          <p className={styles.bodyText}>
+          <p className={styles.bodyText} style={{ textAlign: 'center' }}>
             <strong>Enter your information below to get instant access:</strong>
           </p>
 
