@@ -190,18 +190,25 @@ export const Congratulations = () => {
             </div>
 
             <div className={styles.consentSection}>
-              <label className={styles.checkboxLabel} style={{ border: 'none', padding: '8px 0' }}>
+              <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', marginBottom: '16px', lineHeight: '1.5' }}>
+                Pain relief decisions are easier when your questions get answered quickly. Get text-only answers—no calls—so you can quickly see whether cellular repair is the right fit for you.
+              </p>
+              <label className={styles.checkboxLabel} style={{ border: 'none', padding: '8px 0', alignItems: 'flex-start' }}>
                 <input
                   type="checkbox"
                   checked={consentToText}
                   onChange={(e) => setConsentToText(e.target.checked)}
                   className={styles.checkbox}
                   required
+                  style={{ marginTop: '3px' }}
                 />
-                <span className={styles.checkboxText} style={{ fontSize: '0.875rem', color: 'rgba(107, 114, 128, 1)' }}>
-                  By providing my phone number, I agree to receive marketing text messages from Primary Cell at the number provided, including via automated technology. Message frequency may vary. Message and data rates may apply. Consent is not a condition of purchase. Reply STOP to opt out and HELP for help. <span className={styles.required}>*</span>
+                <span className={styles.checkboxText} style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)' }}>
+                  I agree to receive text messages about my care from Wellness In Weeks ("WIW") at the number I provide. If I choose to move forward, WIW may also text me about scheduling and available consultation openings. Message frequency may vary and message/data rates may apply. Consent is not required to receive care or buy services. Reply STOP to opt out and HELP for help. <span className={styles.required}>*</span>
                 </span>
               </label>
+              <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', marginTop: '16px', lineHeight: '1.5' }}>
+                By proceeding, you confirm you've reviewed our <a href="#" style={{ color: 'rgba(29, 44, 73, 1)', textDecoration: 'underline' }}>SMS & Privacy Policy</a>.
+              </p>
             </div>
 
             <Button 
