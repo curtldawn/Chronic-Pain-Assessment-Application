@@ -68,8 +68,8 @@ export const Welcome = () => {
               <li>Answer any questions you have</li>
               <li>Explain our process, fees, and guarantee (Yep. We stand behind our work!)</li>
             </ul>
-            <p className={styles.bodyText}>
-              If you're ready, schedule your Pain Consultation below:
+            <p className={styles.bodyText} style={{ textAlign: 'center', marginTop: '24px' }}>
+              <strong>If you're ready, schedule your Pain Consultation below:</strong>
             </p>
 
             {/* Calendar Booking - Placeholder */}
