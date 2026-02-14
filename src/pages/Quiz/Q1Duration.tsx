@@ -113,6 +113,7 @@ export const Q1Duration = () => {
             </motion.div>
           )}
         </AnimatePresence>
+        <QuizFooter />
       </div>
     </div>
   );
