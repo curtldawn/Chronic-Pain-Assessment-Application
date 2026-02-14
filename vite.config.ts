@@ -37,8 +37,10 @@ export default defineConfig({
     open: false,
     allowedHosts: [
       '.preview.emergentagent.com',
+      '.preview.emergentcf.cloud',
       '.emergent.sh',
       'localhost',
+      'all',
     ],
     proxy: {
       // Proxy API requests to backend during development
