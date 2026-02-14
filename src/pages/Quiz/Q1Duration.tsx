@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useQuiz } from '@context/QuizContext';
 import { Button } from '@components/common/Button';
+import QuizFooter from './QuizFooter';
 import styles from './Quiz.module.css';
 
 export const Q1Duration = () => {
