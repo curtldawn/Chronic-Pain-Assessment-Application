@@ -53,7 +53,10 @@ export const Q4WhatsMissing = () => {
   };
 
   return (
-    <div className={styles.quizContainer}>
+    <div className={`${styles.quizContainer} ${styles.quizContainerRelative}`}>
+      <button className={styles.backArrow} onClick={handleBack} aria-label="Go back">
+        ←
+      </button>
       <motion.div
         className={styles.quizContent}
         initial={{ opacity: 0, y: 20 }}
