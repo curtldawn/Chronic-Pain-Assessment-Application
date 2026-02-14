@@ -33,6 +33,8 @@ const Q7OpenQuestions = React.lazy(() => import('./pages/Quiz/Q7OpenQuestions'))
 const Congratulations = React.lazy(() => import('./pages/Quiz/Congratulations'));
 const CongratulationsAlternative = React.lazy(() => import('./pages/Quiz/CongratulationsAlternative'));
 const Welcome = React.lazy(() => import('./pages/Quiz/Welcome'));
+const TermsAndConditions = React.lazy(() => import('./pages/Quiz/TermsAndConditions'));
+const PrivacyPolicy = React.lazy(() => import('./pages/Quiz/PrivacyPolicy'));
 
 /**
  * Loading fallback component
