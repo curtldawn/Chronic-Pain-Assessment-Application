@@ -85,7 +85,10 @@ export const Q2Treatments = () => {
   };
 
   return (
-    <div className={styles.quizContainer}>
+    <div className={`${styles.quizContainer} ${styles.quizContainerRelative}`}>
+      <button className={styles.backArrow} onClick={handleBack} aria-label="Go back">
+        ←
+      </button>
       <motion.div
         className={styles.quizContent}
         initial={{ opacity: 0, y: 20 }}
@@ -144,10 +147,7 @@ export const Q2Treatments = () => {
           </AnimatePresence>
         </div>
 
-        <div className={styles.navigationButtons}>
-          <Button variant="secondary" onClick={handleBack}>
-            Back
-          </Button>
+        <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
           <Button
             variant="primary"
             size="large"
@@ -157,6 +157,7 @@ export const Q2Treatments = () => {
             Continue
           </Button>
         </div>
+        <QuizFooter />
       </motion.div>
     </div>
   );
