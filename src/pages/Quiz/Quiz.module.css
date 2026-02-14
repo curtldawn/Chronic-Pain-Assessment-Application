@@ -39,7 +39,7 @@
 .subhead {
   font-size: clamp(1.125rem, 3vw, 1.5rem);
   font-weight: 500;
-  color: rgba(226, 211, 163, 1);
+  color: rgba(180, 155, 90, 1);
   margin: 0;
   line-height: 1.4;
 }
