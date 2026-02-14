@@ -6,6 +6,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@components/common/Button';
+import QuizFooter from './QuizFooter';
 import styles from './Quiz.module.css';
 
 export const Welcome = () => {
@@ -17,7 +18,10 @@ export const Welcome = () => {
   };
 
   return (
-    <div className={styles.quizContainer}>
+    <div className={`${styles.quizContainer} ${styles.quizContainerRelative}`}>
+      <button className={styles.backArrow} onClick={handleBack} aria-label="Go back">
+        ←
+      </button>
       <motion.div
         className={styles.quizContent}
         initial={{ opacity: 0, y: 20 }}
@@ -82,13 +86,8 @@ export const Welcome = () => {
               </p>
             </div>
           </div>
-
-          <div className={styles.navigationButtons} style={{ marginTop: '32px' }}>
-            <Button variant="secondary" onClick={handleBack}>
-              Back
-            </Button>
-          </div>
         </div>
+        <QuizFooter />
       </motion.div>
     </div>
   );
