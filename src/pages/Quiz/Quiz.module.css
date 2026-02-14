@@ -455,3 +455,42 @@
     gap: 16px;
   }
 }
+
+/* Legal Pages (Terms & Privacy) */
+.legalContent {
+  text-align: left;
+}
+
+.legalHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(29, 44, 73, 1);
+  margin: 32px 0 16px;
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+  padding-bottom: 8px;
+}
+
+.legalSubheading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(29, 44, 73, 1);
+  margin: 24px 0 12px;
+}
+
+.legalList {
+  margin: 16px 0;
+  padding-left: 24px;
+  list-style-type: disc;
+}
+
+.legalList li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(29, 44, 73, 1);
+  margin-bottom: 12px;
+}
+
+.legalList li strong {
+  color: rgba(29, 44, 73, 1);
+}
+
