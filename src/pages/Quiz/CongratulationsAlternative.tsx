@@ -244,13 +244,8 @@ export const CongratulationsAlternative = () => {
               {isSubmitting ? 'Submitting...' : 'Watch Chad\'s Case Study Now'}
             </Button>
           </form>
-
-          <div className={styles.navigationButtons} style={{ marginTop: '24px' }}>
-            <Button variant="secondary" onClick={handleBack}>
-              Back
-            </Button>
-          </div>
         </div>
+        <QuizFooter />
       </motion.div>
     </div>
   );
