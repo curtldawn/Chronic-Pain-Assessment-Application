@@ -6,6 +6,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@components/common/Button';
+import QuizFooter from './QuizFooter';
 import styles from './Quiz.module.css';
 
 export const ManualReview = () => {
@@ -20,7 +21,10 @@ export const ManualReview = () => {
   };
 
   return (
-    <div className={styles.quizContainer}>
+    <div className={`${styles.quizContainer} ${styles.quizContainerRelative}`}>
+      <button className={styles.backArrow} onClick={handleBack} aria-label="Go back">
+        ←
+      </button>
       <motion.div
         className={styles.quizContent}
         initial={{ opacity: 0, y: 20 }}
@@ -40,15 +44,13 @@ export const ManualReview = () => {
             We'll contact you by email to let you know if we can help with your condition.
           </p>
 
-          <div className={styles.navigationButtons}>
-            <Button variant="secondary" onClick={handleBack}>
-              Back
-            </Button>
+          <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
             <Button variant="primary" size="large" onClick={handleContinue}>
               Continue
             </Button>
           </div>
         </div>
+        <QuizFooter />
       </motion.div>
     </div>
   );
