@@ -109,10 +109,7 @@ export const Q4WhatsMissing = () => {
           )}
         </div>
 
-        <div className={styles.navigationButtons}>
-          <Button variant="secondary" onClick={handleBack}>
-            Back
-          </Button>
+        <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
           <Button
             variant="primary"
             size="large"
@@ -122,6 +119,7 @@ export const Q4WhatsMissing = () => {
             Continue
           </Button>
         </div>
+        <QuizFooter />
       </motion.div>
     </div>
   );
