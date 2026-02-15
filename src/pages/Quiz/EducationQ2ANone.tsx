@@ -33,28 +33,31 @@ export const EducationQ2ANone = () => {
       >
         <div className={styles.educationContent}>
           <p className={styles.educationText}>
-            If you're here, it might mean that damage inside your cells is recreating your pain.
+            If you're here, it might mean that you have subcellular damage that is recreating your pain.
           </p>
           <p className={styles.educationText}>
-            Peer‑reviewed research published in the <em>Journal of Prenatal & Perinatal Psychology & Health</em> has documented how subcellular damage patterns can persist and repeat indefinitely.
+            Peer-reviewed research has documented its existence and how these damage patterns can persist indefinitely.**
           </p>
           <p className={styles.educationText}>
-            This means that pain caused by subcellular damage can persist and repeat throughout life—unless the cells are repaired.
+            This means pain caused by subcellular damage can continue throughout your life—unless the damage is repaired.
           </p>
           <p className={styles.educationText}>
-            Clinical teams using this research in real‑world practice have been repairing this subcellular damage for years, helping people permanently reduce and even eliminate their chronic pain* through gentle, non‑invasive, drug‑free techniques.
+            Clinical teams using this research in real-world practice have been helping people permanently reduce and even eliminate their chronic pain* through gentle, non-invasive techniques.
           </p>
           <p className={styles.educationText}>
-            Cellular damage repair is based on specialized research that hasn't reached mainstream medicine yet—which is why your doctor hasn't mentioned it.
+            This subcellular repair approach is based on specialized research that hasn't reached mainstream medicine yet—which is why your doctor hasn't mentioned it.
           </p>
           <p className={styles.educationText}>
-            <strong>Cellular repair works through something called your Primary Cell.</strong>
+            It works through something researchers call your <strong>Primary Cell</strong>.
           </p>
           <p className={styles.educationText}>
-            To begin, let's see whether your condition fits the cellular repair model.
+            To begin, let's see if your condition fits the subcellular repair model.
           </p>
           <p className={styles.disclaimerText}>
             *Based on clinical observations and ongoing research
+          </p>
+          <p className={styles.disclaimerText}>
+            **Journal of Prenatal & Perinatal Psychology & Health (2024, 2025)
           </p>
 
           <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
