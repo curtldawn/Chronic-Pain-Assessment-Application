@@ -67,6 +67,11 @@ export const CongratulationsAlternative = () => {
     .map(id => CONDITION_LABELS[id])
     .filter(Boolean);
 
+  // Get treatable condition IDs for checking neck/back pain
+  const treatableConditionIds = state.treatableConditions.length > 0 
+    ? state.treatableConditions 
+    : state.conditions.filter(id => CONDITION_LABELS[id] && !NON_TREATABLE_IDS.includes(id));
+
   const nonTreatableLabels = (state.nonTreatableConditions.length > 0
     ? state.nonTreatableConditions
     : state.conditions.filter(id => NON_TREATABLE_IDS.includes(id))
@@ -78,6 +83,11 @@ export const CongratulationsAlternative = () => {
   const hasNonTreatable = nonTreatableLabels.length > 0;
   const conditionText = formatListWithAnd(treatableLabels);
   const nonTreatableText = formatListWithAnd(nonTreatableLabels);
+
+  // Check if user selected neck or back pain (for conditional sentence)
+  const hasNeckOrBackPain = treatableConditionIds.some(id => NECK_BACK_PAIN_IDS.includes(id));
+  // Show the "While Chad's case..." sentence only if user did NOT select neck or back pain
+  const showChadComparisonSentence = !hasNeckOrBackPain && treatableLabels.length > 0;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
