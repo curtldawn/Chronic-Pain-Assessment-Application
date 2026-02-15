@@ -305,6 +305,12 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   }, []);
 
   const reset = useCallback(() => {
+    // Clear sessionStorage when resetting
+    try {
+      sessionStorage.removeItem(QUIZ_STORAGE_KEY);
+    } catch (error) {
+      console.error('Error clearing quiz state from storage:', error);
+    }
     dispatch({ type: 'RESET' });
   }, []);
 
