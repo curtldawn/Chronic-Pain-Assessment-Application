@@ -228,7 +228,13 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
 const QuizContext = createContext<QuizContextType | undefined>(undefined);
 
 export const QuizProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [state, dispatch] = useReducer(quizReducer, initialState);
+  // Initialize state from sessionStorage if available
+  const [state, dispatch] = useReducer(quizReducer, initialState, () => loadStateFromStorage());
+
+  // Save state to sessionStorage whenever it changes
+  useEffect(() => {
+    saveStateToStorage(state);
+  }, [state]);
 
   const setPainDuration = useCallback((duration: QuizState['painDuration']) => {
     dispatch({ type: 'SET_PAIN_DURATION', payload: duration });
