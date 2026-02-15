@@ -150,17 +150,25 @@ export const Congratulations = () => {
           )}
 
           <p className={styles.bodyText} style={{ textAlign: 'center' }}>
-            <strong>To learn how we reduce or eliminate chronic pain:</strong>
+            <strong>Want to see how we reduce or eliminate chronic pain?</strong>
           </p>
           <p className={styles.bodyText}>
-            Watch the case study of Chad—a client who had 5 years of severe degenerative bone-on-bone neck pain that made him nauseous, grumpy, and unable to function.
+            Watch session footage to see how subcellular repair works—eliminating Chad's pain.
           </p>
-          <p className={styles.bodyText}>You'll see:</p>
+          <p className={styles.bodyText}>
+            Chad spent 5 years throwing up from severe neck and back pain, calling in sick regularly.
+          </p>
+          <p className={styles.bodyText}>
+            Today, he has his life back—and the pain has never returned.
+          </p>
+          <p className={styles.bodyText}>
+            <strong>You'll see in his Zoom sessions:</strong>
+          </p>
           <ul className={styles.bulletList} style={{ listStyleType: 'disc' }}>
-            <li>Highlights from his Pain Consultation—sharing his fight to push through pain just to perform at work each day</li>
-            <li>An unedited demonstration of the cellular repair process</li>
-            <li>The exact moment he realizes his pain is completely gone</li>
-            <li>His wife describe what life feels like now that his pain is finally gone</li>
+            <li>Highlights from his Pain Relief Consultation—sharing his fight to push through pain just to perform at work each day</li>
+            <li>An unedited demonstration of the subcellular repair process during one of his Zoom sessions–yes, we work over Zoom nationwide</li>
+            <li>The exact moment he realizes his pain is completely gone—neck, mid-back, & lower back</li>
+            <li>His wife describes what life feels like now that his pain is finally gone</li>
           </ul>
 
           <p className={styles.bodyText}>
@@ -169,6 +177,13 @@ export const Congratulations = () => {
           <p className={styles.bodyText}>
             We'll email you the link so you can rewatch it anytime.
           </p>
+          
+          {showChadComparisonSentence && (
+            <p className={styles.bodyText} style={{ fontStyle: 'italic' }}>
+              While Chad's case demonstrates neck and back pain, the subcellular repair process works the same for your {conditionText}.
+            </p>
+          )}
+
           <p className={styles.bodyText} style={{ textAlign: 'center' }}>
             <strong>Enter your information below to get instant access:</strong>
           </p>
