@@ -33,31 +33,40 @@ export const AlternativePrimaryCellExplanation = () => {
       >
         <div className={styles.educationContent}>
           <p className={styles.educationText}>
-            Most chronic pain conditions have a strong possibility that pain persists because of subcellular damage—which means it can be repaired.
+            Many chronic pain conditions stem from subcellular damage—damage that can be repaired.
           </p>
           <p className={styles.educationText}>
-            Researchers have identified what they call your <strong>Primary Cell</strong>—a specialized master cell that controls the pattern and function of all cells in your body.
+            <strong>This is where your Primary Cell comes in:</strong>
           </p>
           <p className={styles.educationText}>
-            Unlike regular cells, your Primary Cell doesn't die and regenerate every few months.
+            Researchers discovered your Primary Cell—a unique master cell that controls the pattern and function of every other cell in your body.**
           </p>
           <p className={styles.educationText}>
-            When you get injured or have ongoing degenerative problems, your Primary Cell can sustain damage* and/or trigger subcellular damage that occurred before birth.**
+            Unlike regular cells, it never dies. It lasts your entire life.
           </p>
           <p className={styles.educationText}>
-            This subcellular damage persists in your Primary Cell throughout your life, continuously signaling pain.
+            When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
           </p>
           <p className={styles.educationText}>
-            <strong>When your Primary Cell is repaired, it eliminates the source of your pain.</strong>
+            <strong>Here's how this can cause your pain:</strong>
           </p>
           <p className={styles.educationText}>
-            The result?
+            Your Primary Cell is like a master template your body follows. When an area of it is damaged, your body keeps following that disrupted pattern—and this pattern appears where you hurt.
           </p>
           <p className={styles.educationText}>
-            Some people find their pain permanently eliminated, while others experience a significant permanent reduction.
+            This damage can persist in your Primary Cell throughout your life.
           </p>
           <p className={styles.educationText}>
-            <strong>This isn't pain management—this is fixing the subcellular source by repairing your Primary Cell.</strong>
+            When it's repaired, it creates a healthy pattern—relieving your pain.
+          </p>
+          <p className={styles.educationText}>
+            <strong>The result?</strong>
+          </p>
+          <p className={styles.educationText}>
+            For years, in real-world practice, some people find their pain permanently eliminated, while others experience significant reduction that lasts long-term.*
+          </p>
+          <p className={styles.educationText}>
+            This is not pain management—this is repairing the subcellular source.
           </p>
           
           <div style={{ marginTop: '32px', lineHeight: '1.4' }}>
@@ -65,7 +74,7 @@ export const AlternativePrimaryCellExplanation = () => {
               *Based on clinical observations and ongoing research
             </p>
             <p className={styles.disclaimerText}>
-              **Journal of Prenatal & Perinatal Psychology & Health, published 11-03-2024
+              **Journal of Prenatal & Perinatal Psychology & Health (2024, 2025)
             </p>
           </div>
 
