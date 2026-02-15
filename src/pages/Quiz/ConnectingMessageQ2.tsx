@@ -36,7 +36,7 @@ export const ConnectingMessageQ2 = () => {
             Here's what all these treatments have in common:
           </p>
           <p className={styles.educationText}>
-            <strong>They address symptoms or functional structural issues, but they do not repair the subcellular damage that can continuously recreate your pain.</strong>
+            They address symptoms or functional structural issues, but <strong>they do not repair the subcellular damage that can constantly recreate your pain.</strong>
           </p>
           <p className={styles.educationText}>
             That's why the relief is temporary or incomplete—the subcellular source was never addressed.
