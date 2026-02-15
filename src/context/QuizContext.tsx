@@ -127,6 +127,30 @@ const initialState: QuizState = {
   wantsNotification: false,
 };
 
+// Helper function to load state from sessionStorage
+const loadStateFromStorage = (): QuizState => {
+  try {
+    const savedState = sessionStorage.getItem(QUIZ_STORAGE_KEY);
+    if (savedState) {
+      const parsed = JSON.parse(savedState);
+      // Ensure all required fields exist (in case of schema changes)
+      return { ...initialState, ...parsed };
+    }
+  } catch (error) {
+    console.error('Error loading quiz state from storage:', error);
+  }
+  return initialState;
+};
+
+// Helper function to save state to sessionStorage
+const saveStateToStorage = (state: QuizState): void => {
+  try {
+    sessionStorage.setItem(QUIZ_STORAGE_KEY, JSON.stringify(state));
+  } catch (error) {
+    console.error('Error saving quiz state to storage:', error);
+  }
+};
+
 // ============================================================================
 // REDUCER
 // ============================================================================
