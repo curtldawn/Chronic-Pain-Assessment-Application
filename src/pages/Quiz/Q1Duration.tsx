@@ -51,7 +51,7 @@ export const Q1Duration = () => {
                   Still in Pain After Everything You've Tried?
                 </h1>
                 <p className={styles.subhead}>
-                  Take this 7-minute assessment to see if cellular repair can reduce or eliminate your chronic pain.
+                  Take this 7-minute assessment to discover a new approach to chronic pain—and see if you qualify for subcellular repair.
                 </p>
               </div>
 
@@ -88,16 +88,19 @@ export const Q1Duration = () => {
             >
               <div className={styles.educationContent}>
                 <p className={styles.educationText}>
-                  It's clear you've been living with pain for a while—and haven't given up on finding real relief.
+                  By 6 months, you likely felt that your pain would be resolved or certainly in a better place by now.
+                </p>
+                <p className={styles.educationText}>
+                  Yet here you are–still in pain, but determined to find real relief.
                 </p>
                 <p className={styles.educationText}>
                   So, what's keeping the pain alive?
                 </p>
                 <p className={styles.educationText}>
-                  New peer-reviewed research has found that <strong>chronic pain can be stored inside your cells as subcellular damage</strong>–creating ongoing pain deep inside the very joints, discs, nerves, and tissues affected by injury, surgery, or wear-and-tear.
+                  New peer-reviewed research has found that chronic pain is often linked to subcellular damage—and that damage can create ongoing pain.
                 </p>
                 <p className={styles.educationText}>
-                  However, the subcellular damage can be repaired, depending on your condition.
+                  This damage might be the source of your chronic pain condition, and it can be repaired for relief, depending on your specific case.
                 </p>
 
                 <Button
