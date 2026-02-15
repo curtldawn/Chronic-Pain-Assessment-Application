@@ -36,8 +36,8 @@ class Settings(BaseSettings):
         "http://localhost:4173",  # Vite preview server
         "https://primarycell.com",
         "https://www.primarycell.com",
-        "https://cellquiz-revamp.preview.emergentagent.com",  # Emergent preview
-        "https://cellquiz-revamp.preview.emergentagent.com",  # Custom preview domain
+        "https://condition-branching.preview.emergentagent.com",  # Emergent preview
+        "https://condition-branching.preview.emergentagent.com",  # Custom preview domain
     ]
 
     # Add additional CORS origins from environment

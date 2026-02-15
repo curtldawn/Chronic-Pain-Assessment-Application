@@ -22,7 +22,7 @@
 - **API Health Check**: http://localhost:8000/health
 
 ### External Preview (if deployed)
-- **Frontend**: https://cellquiz-revamp.preview.emergentagent.com
+- **Frontend**: https://condition-branching.preview.emergentagent.com
 
 ---
 
