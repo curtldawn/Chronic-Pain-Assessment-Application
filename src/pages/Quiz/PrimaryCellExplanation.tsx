@@ -88,7 +88,7 @@ export const PrimaryCellExplanation = () => {
             <strong>Here's how this can cause your pain:</strong>
           </p>
           <p className={styles.educationText}>
-            Your Primary Cell is like a master template your body follows. When an area of it is damaged, your body keeps following that disrupted pattern—and this pattern appears where you hurt.
+            Your Primary Cell is like a master template your body follows. When an area of it is damaged, your body keeps following that disrupted pattern—and this unhealthy pattern causes pain where you hurt.
           </p>
           <p className={styles.educationText}>
             This damage can persist in your Primary Cell throughout your life.
