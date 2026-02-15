@@ -30,6 +30,19 @@ const CONDITION_LABELS: Record<string, string> = {
   gastrointestinal_disorders: 'gastrointestinal disorders',
 };
 
+// Non-treatable condition IDs
+const NON_TREATABLE_IDS = [
+  'chronic_fatigue_syndrome',
+  'autoimmune_diseases',
+  'fibromyalgia',
+  'infectious_diseases',
+  'endocrine_disorders',
+  'gastrointestinal_disorders',
+];
+
+// Neck and back pain condition IDs (for conditional sentence)
+const NECK_BACK_PAIN_IDS = ['chronic_back_pain', 'chronic_neck_pain'];
+
 // Helper function to format list with "and" before last item
 const formatListWithAnd = (items: string[]): string => {
   if (items.length === 0) return '';
