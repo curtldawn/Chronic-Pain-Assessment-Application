@@ -1,9 +1,13 @@
 /**
  * Quiz Context
  * Manages state for the new quiz assessment flow
+ * Persists state to sessionStorage to survive page refreshes
  */
 
-import React, { createContext, useContext, useReducer, useCallback, ReactNode } from 'react';
+import React, { createContext, useContext, useReducer, useCallback, ReactNode, useEffect } from 'react';
+
+// Storage key for sessionStorage
+const QUIZ_STORAGE_KEY = 'quiz_state';
 
 // ============================================================================
 // TYPES
