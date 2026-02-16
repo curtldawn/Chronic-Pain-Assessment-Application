@@ -28,7 +28,7 @@ export const Welcome = () => {
         transition={{ duration: 0.5 }}
         style={{ maxWidth: '900px' }}
       >
-        <h1 className={styles.headline}>
+        <h1 className={styles.headline} style={{ textAlign: 'center' }}>
           <strong>"I Don't Feel Anything Right Now"—Watch Chad's 5-Year Pain Disappear Live</strong>
         </h1>
 
