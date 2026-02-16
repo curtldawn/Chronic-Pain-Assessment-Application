@@ -51,7 +51,7 @@ export const Q1Duration = () => {
                   Still in Pain After Everything You've Tried?
                 </h1>
                 <p className={styles.subhead}>
-                  Take this 7-minute assessment to discover a new approach to chronic pain—and see if you qualify for subcellular repair.
+                  Take this 7‑minute assessment to discover a new way to relieve chronic pain—and see if you qualify for subcellular repair.
                 </p>
               </div>
 
