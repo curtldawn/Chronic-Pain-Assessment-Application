@@ -189,7 +189,7 @@ export const CongratulationsAlternative = () => {
           
           {showChadComparisonSentence && (
             <p className={styles.bodyText} style={{ fontStyle: 'italic' }}>
-              While Chad's case demonstrates neck and back pain, the subcellular repair process works the same for your {conditionText}.
+              While Chad's case demonstrates neck and back pain, the subcellular repair process works the same for your <strong>{conditionText}</strong>.
             </p>
           )}
 
