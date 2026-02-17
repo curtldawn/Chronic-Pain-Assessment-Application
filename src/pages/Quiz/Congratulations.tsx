@@ -138,7 +138,7 @@ export const Congratulations = () => {
         <div className={styles.congratsContent}>
           {/* Qualification confirmation - highlighted */}
           <div style={{
-            backgroundColor: 'rgba(236, 253, 245, 1)',
+            backgroundColor: 'rgba(243, 254, 250, 1)',
             borderRadius: '10px',
             padding: '18px 20px',
             marginBottom: '20px'
