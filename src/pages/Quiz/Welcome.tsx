@@ -65,7 +65,7 @@ export const Welcome = () => {
             
             {/* Before you schedule - subtle highlight */}
             <div style={{
-              backgroundColor: 'rgba(29, 44, 73, 0.03)',
+              backgroundColor: 'rgba(239, 246, 255, 1)',
               borderRadius: '10px',
               padding: '16px 20px',
               marginBottom: '20px'
