@@ -188,13 +188,40 @@ export const Q3Conditions = () => {
               className={styles.formField}
               style={{ marginTop: '16px' }}
             >
-              <textarea
-                value={otherText}
-                onChange={(e) => setOtherText(e.target.value)}
-                placeholder="Please describe your condition..."
-                className={styles.textarea}
-                rows={3}
-              />
+              <div style={{ position: 'relative' }}>
+                <textarea
+                  value={otherText}
+                  onChange={(e) => setOtherText(e.target.value)}
+                  placeholder="Please describe your condition..."
+                  className={styles.textarea}
+                  rows={3}
+                />
+                {otherText.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setOtherText('')}
+                    style={{
+                      position: 'absolute',
+                      top: '8px',
+                      right: '8px',
+                      background: 'rgba(107, 114, 128, 0.2)',
+                      border: 'none',
+                      borderRadius: '50%',
+                      width: '24px',
+                      height: '24px',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '14px',
+                      color: 'rgba(107, 114, 128, 1)',
+                    }}
+                    aria-label="Clear text"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
               {otherText.length > 0 && (
                 <p className={styles.helperText} style={{ marginTop: '12px', marginBottom: '0' }}>
                   A practitioner will review your condition and contact you by email to let you know if we can help.
