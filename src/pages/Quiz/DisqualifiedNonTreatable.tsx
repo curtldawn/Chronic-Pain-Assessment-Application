@@ -55,6 +55,7 @@ export const DisqualifiedNonTreatable = () => {
           email,
           phone,
           non_treatable_conditions: state.nonTreatableConditions,
+          consent_to_text: consentToText,
         }),
       });
     } catch (error) {
