@@ -132,7 +132,7 @@ export const Congratulations = () => {
         transition={{ duration: 0.5 }}
       >
         <h1 className={styles.congratsHeadline}>
-          Based on your answers, you are a good candidate for cellular repair
+          Based on your answers, you are a good candidate for subcellular repair
         </h1>
 
         <div className={styles.congratsContent}>
@@ -149,7 +149,7 @@ export const Congratulations = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               marginBottom: '12px'
             }}>
-              Your <strong>{conditionText}</strong> that you've had for more than 6 months make you a good candidate for cellular repair.
+              Your <strong>{conditionText}</strong> that you've had for more than 6 months make you eligible for subcellular repair.
             </p>
             <p style={{ 
               fontSize: '1.05rem',
@@ -157,7 +157,7 @@ export const Congratulations = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               margin: '0'
             }}>
-              Your pain is very likely caused by subcellular damage that can be repaired.
+              Your pain is very likely caused by subcellular damage that can be reversed.
             </p>
           </div>
 
