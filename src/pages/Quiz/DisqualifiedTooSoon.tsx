@@ -111,7 +111,7 @@ export const DisqualifiedTooSoon = () => {
             <p className={styles.bodyText} style={{ marginBottom: '8px' }}>
               This damage might be the source of your chronic pain condition. If so, it can be repaired for lasting relief.
             </p>
-            <p style={{ fontSize: '0.75rem', color: 'rgba(107, 114, 128, 1)', fontStyle: 'italic', marginBottom: '0' }}>
+            <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', fontStyle: 'italic', marginBottom: '0' }}>
               *Based on clinical observations and ongoing research
             </p>
           </div>
