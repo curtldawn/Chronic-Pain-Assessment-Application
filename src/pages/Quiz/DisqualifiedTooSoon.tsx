@@ -103,13 +103,13 @@ export const DisqualifiedTooSoon = () => {
             marginBottom: '24px'
           }}>
             <p className={styles.bodyText}>
-              When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
+              When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, you can sustain subcellular damage.*
             </p>
             <p className={styles.bodyText}>
               New peer-reviewed research has found that chronic pain is often linked to subcellular damage—and that damage can create ongoing pain.
             </p>
             <p className={styles.bodyText} style={{ marginBottom: '8px' }}>
-              This damage might be the source of your chronic pain condition. If so, it can be repaired for lasting relief.
+              If subcellular damage is the source of your chronic pain condition, it can be repaired for lasting relief.
             </p>
             <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', fontStyle: 'italic', marginBottom: '0' }}>
               *Based on clinical observations and ongoing research

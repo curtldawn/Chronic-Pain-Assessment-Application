@@ -31,7 +31,7 @@ export const ManualReview = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className={styles.headline}>Thank You - We'll Review Your Condition</h1>
+        <h1 className={styles.headline} style={{ textAlign: 'center' }}>Thank You - We'll Review Your Condition</h1>
 
         <div className={styles.disqualificationContent}>
           <p className={styles.bodyText}>
