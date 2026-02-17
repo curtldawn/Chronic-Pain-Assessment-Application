@@ -62,9 +62,25 @@ export const Welcome = () => {
             <p className={styles.bodyText}>
               If you'd like to explore how subcellular repair can reduce or eliminate your specific chronic pain, we invite you to schedule a complimentary 45-minute Pain Relief Consultation.
             </p>
-            <p className={styles.bodyText} style={{ textAlign: 'left' }}>
-              <strong>Before you schedule:</strong> Watch the full video to see if this approach feels right for you. This ensures our call is productive and focused on your specific needs.
-            </p>
+            
+            {/* Before you schedule - subtle highlight */}
+            <div style={{
+              backgroundColor: 'rgba(29, 44, 73, 0.03)',
+              borderRadius: '10px',
+              padding: '16px 20px',
+              marginBottom: '20px'
+            }}>
+              <p style={{ 
+                fontSize: '1rem',
+                lineHeight: '1.7',
+                color: 'rgba(29, 44, 73, 0.9)',
+                margin: '0'
+              }}>
+                <strong>Before you schedule:</strong> Watch the full video to see if this approach feels right for you. This ensures our call is productive and focused on your specific needs.
+              </p>
+            </div>
+            
+            {/* On this call section */}
             <p className={styles.bodyText} style={{ textAlign: 'left' }}>
               <strong>On this call, we'll:</strong>
             </p>
@@ -74,12 +90,34 @@ export const Welcome = () => {
               <li>Answer any questions you have</li>
               <li>Explain our process, fees, and guarantee (Yep. We stand behind our work!)</li>
             </ul>
-            <p className={styles.bodyText} style={{ textAlign: 'center', marginTop: '24px' }}>
-              <strong>Ready to reduce or eliminate your pain?</strong>
-            </p>
-            <p className={styles.bodyText} style={{ textAlign: 'left' }}>
-              Schedule your complimentary Pain Relief Consultation below:
-            </p>
+            
+            {/* Final CTA */}
+            <div style={{ 
+              marginTop: '28px',
+              textAlign: 'center'
+            }}>
+              <div style={{
+                width: '60px',
+                height: '2px',
+                backgroundColor: 'rgba(29, 44, 73, 0.15)',
+                margin: '0 auto 20px'
+              }} />
+              <p style={{ 
+                fontSize: '1.1rem',
+                fontWeight: '600',
+                color: 'rgba(29, 44, 73, 1)',
+                marginBottom: '8px'
+              }}>
+                Ready to reduce or eliminate your pain?
+              </p>
+              <p style={{ 
+                fontSize: '1rem',
+                color: 'rgba(29, 44, 73, 0.85)',
+                marginBottom: '20px'
+              }}>
+                Schedule your complimentary Pain Relief Consultation below:
+              </p>
+            </div>
 
             {/* Calendar Booking Widget - Placeholder */}
             <div className={styles.calendarPlaceholder}>
