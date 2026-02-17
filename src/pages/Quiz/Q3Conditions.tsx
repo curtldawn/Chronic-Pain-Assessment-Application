@@ -45,6 +45,14 @@ export const Q3Conditions = () => {
     }
   };
 
+  // Handle Other checkbox - clear text when unchecked
+  const handleOtherToggle = (checked: boolean) => {
+    setShowOtherField(checked);
+    if (!checked) {
+      setOtherText(''); // Clear the text when unchecking "Other"
+    }
+  };
+
   const handleContinue = async () => {
     setConditions(selected);
     setConditionOther(otherText);
