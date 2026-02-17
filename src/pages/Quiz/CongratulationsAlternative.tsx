@@ -139,7 +139,7 @@ export const CongratulationsAlternative = () => {
         <div className={styles.congratsContent}>
           {/* Practitioner review notice */}
           <div style={{
-            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            backgroundColor: 'rgba(239, 246, 255, 1)',
             borderRadius: '10px',
             padding: '18px 20px',
             marginBottom: '20px'
@@ -156,7 +156,7 @@ export const CongratulationsAlternative = () => {
 
           {hasTreatable && (
             <div style={{
-              backgroundColor: 'rgba(29, 44, 73, 0.04)',
+              backgroundColor: 'rgba(236, 253, 245, 1)',
               borderRadius: '10px',
               padding: '18px 20px',
               marginBottom: '20px'
@@ -244,7 +244,7 @@ export const CongratulationsAlternative = () => {
 
           {/* What you'll see - Card with list */}
           <div style={{
-            backgroundColor: 'rgba(29, 44, 73, 0.03)',
+            backgroundColor: 'rgba(239, 246, 255, 1)',
             borderRadius: '10px',
             padding: '18px 20px',
             marginBottom: '20px'
