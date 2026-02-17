@@ -118,6 +118,7 @@ const App: React.FC = () => {
             <Route path="/quiz/congratulations" element={<Congratulations />} />
             <Route path="/quiz/congratulations-alternative" element={<CongratulationsAlternative />} />
             <Route path="/quiz/welcome" element={<Welcome />} />
+            <Route path="/quiz/thank-you-non-treatable" element={<ThankYouNonTreatable />} />
             
             {/* Legal Pages */}
             <Route path="/quiz/terms-and-conditions" element={<TermsAndConditions />} />
