@@ -37,9 +37,18 @@ export const EducationQ2A = () => {
             fontSize: '1.05rem',
             lineHeight: '1.7',
             color: 'rgba(29, 44, 73, 0.9)',
+            marginBottom: '14px'
+          }}>
+            Subcellular damage does not show up on scans.
+          </p>
+          
+          <p style={{ 
+            fontSize: '1.05rem',
+            lineHeight: '1.7',
+            color: 'rgba(29, 44, 73, 0.9)',
             marginBottom: '16px'
           }}>
-            Subcellular damage does not show up on scans—but peer-reviewed research has documented its existence and how these damage patterns can persist indefinitely.**
+            But peer-reviewed research has documented its existence and how these damage patterns can persist indefinitely.**
           </p>
           
           {/* The Consequence - emphasized */}
