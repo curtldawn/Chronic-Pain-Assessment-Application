@@ -71,7 +71,7 @@ export const PrimaryCellExplanation = () => {
         <div className={styles.educationContent}>
           {/* Good News - Highlighted opening */}
           <div style={{
-            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            backgroundColor: 'rgba(236, 253, 245, 1)',
             borderRadius: '10px',
             padding: '18px 20px',
             marginBottom: '24px'
@@ -185,7 +185,7 @@ export const PrimaryCellExplanation = () => {
 
           {/* The Result - Highlighted */}
           <div style={{
-            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            backgroundColor: 'rgba(236, 253, 245, 1)',
             borderRadius: '10px',
             padding: '18px 20px',
             marginBottom: '20px'
