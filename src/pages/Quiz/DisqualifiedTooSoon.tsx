@@ -69,30 +69,55 @@ export const DisqualifiedTooSoon = () => {
         <h1 className={styles.headline}>Thank You for Your Interest</h1>
 
         <div className={styles.disqualificationContent}>
-          <p className={styles.bodyText}>
-            Based on your answer, it's a little early to know if subcellular repair is right for you.
-          </p>
-          <p className={styles.bodyText}>
-            Your body may still be completing its healing process—and that's completely normal.
-          </p>
-          <p className={styles.bodyText}>
-            If your pain continues beyond 6 months, it's a strong indicator that subcellular damage is present—and that's when subcellular repair might become the solution.
-          </p>
-          <p className={styles.bodyText}>
-            When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
-          </p>
-          <p className={styles.bodyText}>
-            New peer-reviewed research has found that chronic pain is often linked to subcellular damage—and that damage can create ongoing pain.
-          </p>
-          <p className={styles.bodyText}>
-            This damage might be the source of your chronic pain condition. If so, it can be repaired for lasting relief.
-          </p>
-          <p className={styles.bodyText}>
-            <strong>To avoid losing contact with us, would you like us to check in later?</strong>
-          </p>
-          <p className={styles.bodyText}>
-            Once it's been 6 months since your injury or last surgery, we'll email you a link to retake this assessment and send you a text letting you know the email has arrived.
-          </p>
+          {/* Section 1: Current Status */}
+          <div style={{ 
+            backgroundColor: 'rgba(29, 44, 73, 0.03)', 
+            borderRadius: '12px', 
+            padding: '20px 24px',
+            marginBottom: '24px'
+          }}>
+            <p className={styles.bodyText} style={{ marginBottom: '12px' }}>
+              Based on your answer, it's a little early to know if subcellular repair is right for you.
+            </p>
+            <p className={styles.bodyText} style={{ marginBottom: '0' }}>
+              Your body may still be completing its healing process—and that's completely normal.
+            </p>
+          </div>
+
+          {/* Section 2: The Science */}
+          <div style={{ marginBottom: '24px' }}>
+            <p className={styles.bodyText}>
+              If your pain continues beyond 6 months, it's a strong indicator that subcellular damage is present—and that's when subcellular repair might become the solution.
+            </p>
+            <p className={styles.bodyText}>
+              When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
+            </p>
+            <p className={styles.bodyText}>
+              New peer-reviewed research has found that chronic pain is often linked to subcellular damage—and that damage can create ongoing pain.
+            </p>
+            <p className={styles.bodyText} style={{ marginBottom: '8px' }}>
+              This damage might be the source of your chronic pain condition. If so, it can be repaired for lasting relief.
+            </p>
+            <p style={{ fontSize: '0.75rem', color: 'rgba(107, 114, 128, 1)', fontStyle: 'italic', marginBottom: '0' }}>
+              *Based on clinical observations and ongoing research
+            </p>
+          </div>
+
+          {/* Section 3: CTA Callout Box */}
+          <div style={{ 
+            backgroundColor: 'rgba(29, 44, 73, 0.06)', 
+            borderLeft: '4px solid rgba(29, 44, 73, 0.8)',
+            borderRadius: '0 12px 12px 0', 
+            padding: '20px 24px',
+            marginBottom: '24px'
+          }}>
+            <p className={styles.bodyText} style={{ marginBottom: '12px' }}>
+              <strong>To avoid losing contact with us, would you like us to check in later?</strong>
+            </p>
+            <p className={styles.bodyText} style={{ marginBottom: '0' }}>
+              Once it's been 6 months since your injury or last surgery, we'll email you a link to retake this assessment and send you a text letting you know the email has arrived.
+            </p>
+          </div>
 
           <form onSubmit={handleSubmit} className={styles.contactForm}>
             <div className={styles.formField}>
