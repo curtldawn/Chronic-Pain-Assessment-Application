@@ -87,20 +87,62 @@ export const Q1Duration = () => {
               transition={{ duration: 0.4 }}
             >
               <div className={styles.educationContent}>
-                <p className={styles.educationText}>
+                {/* Opening - Empathetic connection */}
+                <p className={styles.educationText} style={{ fontSize: '1.1rem' }}>
                   By 6 months, you likely felt that your pain would be resolved or certainly in a better place by now.
                 </p>
-                <p className={styles.educationText}>
-                  Yet here you are–still in pain, but determined to find real relief.
+                
+                {/* Validation - slightly emphasized */}
+                <p className={styles.educationText} style={{ 
+                  fontSize: '1.1rem',
+                  color: 'rgba(29, 44, 73, 0.85)'
+                }}>
+                  Yet here you are–still in pain, but <span style={{ fontWeight: '600', color: 'rgba(29, 44, 73, 1)' }}>determined to find real relief</span>.
                 </p>
-                <p className={styles.educationText}>
-                  So, what's keeping the pain alive?
+
+                {/* The Hook - Dramatic question */}
+                <div style={{ 
+                  margin: '32px 0',
+                  textAlign: 'center'
+                }}>
+                  <div style={{
+                    width: '60px',
+                    height: '2px',
+                    backgroundColor: 'rgba(29, 44, 73, 0.2)',
+                    margin: '0 auto 24px'
+                  }} />
+                  <p style={{ 
+                    fontSize: '1.35rem',
+                    fontWeight: '600',
+                    color: 'rgba(29, 44, 73, 1)',
+                    margin: '0',
+                    fontStyle: 'italic'
+                  }}>
+                    So, what's keeping the pain alive?
+                  </p>
+                  <div style={{
+                    width: '60px',
+                    height: '2px',
+                    backgroundColor: 'rgba(29, 44, 73, 0.2)',
+                    margin: '24px auto 0'
+                  }} />
+                </div>
+
+                {/* The Answer - Research backed */}
+                <p className={styles.educationText} style={{ 
+                  fontSize: '1.05rem',
+                  lineHeight: '1.7'
+                }}>
+                  New peer-reviewed research has found that chronic pain is often linked to <strong>subcellular damage</strong>—and that damage can create ongoing pain.
                 </p>
-                <p className={styles.educationText}>
-                  New peer-reviewed research has found that chronic pain is often linked to subcellular damage—and that damage can create ongoing pain.
-                </p>
-                <p className={styles.educationText}>
-                  This damage might be the source of your chronic pain condition, and it can be repaired for relief, depending on your specific case.
+                
+                {/* Hope - The solution hint */}
+                <p className={styles.educationText} style={{ 
+                  fontSize: '1.05rem',
+                  lineHeight: '1.7',
+                  marginBottom: '32px'
+                }}>
+                  This damage might be the source of your chronic pain condition, and it <strong>can be repaired</strong> for relief, depending on your specific case.
                 </p>
 
                 <Button
