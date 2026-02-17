@@ -136,56 +136,170 @@ export const Congratulations = () => {
         </h1>
 
         <div className={styles.congratsContent}>
-          <p className={styles.bodyText}>
-            Your <strong>{conditionText}</strong> that you've had for more than 6 months make you a good candidate for cellular repair.
-          </p>
-          <p className={styles.bodyText}>
-            Your pain is very likely caused by subcellular damage that can be repaired.
-          </p>
+          {/* Qualification confirmation - highlighted */}
+          <div style={{
+            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            borderRadius: '10px',
+            padding: '18px 20px',
+            marginBottom: '20px'
+          }}>
+            <p style={{ 
+              fontSize: '1.05rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '12px'
+            }}>
+              Your <strong>{conditionText}</strong> that you've had for more than 6 months make you a good candidate for cellular repair.
+            </p>
+            <p style={{ 
+              fontSize: '1.05rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              margin: '0'
+            }}>
+              Your pain is very likely caused by subcellular damage that can be repaired.
+            </p>
+          </div>
 
           {hasNonTreatable && (
-            <p className={styles.bodyText}>
+            <p style={{ 
+              fontSize: '0.95rem',
+              lineHeight: '1.6',
+              color: 'rgba(29, 44, 73, 0.8)',
+              fontStyle: 'italic',
+              marginBottom: '20px'
+            }}>
               However, techniques to address <strong>{nonTreatableText}</strong> do not currently exist. And the clinical teams are continuously researching new solutions.
             </p>
           )}
 
-          <p className={styles.bodyText} style={{ textAlign: 'center' }}>
-            <strong>Want to see how we reduce or eliminate chronic pain?</strong>
-          </p>
-          <p className={styles.bodyText}>
-            Watch session footage to see how subcellular repair works—eliminating Chad's pain.
-          </p>
-          <p className={styles.bodyText}>
-            Chad spent 5 years throwing up from severe neck and back pain, calling in sick regularly.
-          </p>
-          <p className={styles.bodyText}>
-            Today, he has his life back—and the pain has never returned.
-          </p>
-          <p className={styles.bodyText}>
-            <strong>You'll see in his Zoom sessions:</strong>
-          </p>
-          <ul className={styles.bulletList} style={{ listStyleType: 'disc' }}>
-            <li>Highlights from his Pain Relief Consultation—sharing his fight to push through pain just to perform at work each day</li>
-            <li>An unedited demonstration of the subcellular repair process during one of his Zoom sessions–yes, we work over Zoom nationwide</li>
-            <li>The exact moment he realizes his pain is completely gone—neck, mid-back, & lower back</li>
-            <li>His wife describes what life feels like now that his pain is finally gone</li>
-          </ul>
+          {/* Video CTA - Centered hook */}
+          <div style={{ 
+            margin: '24px 0 20px',
+            textAlign: 'center'
+          }}>
+            <div style={{
+              width: '60px',
+              height: '2px',
+              backgroundColor: 'rgba(29, 44, 73, 0.2)',
+              margin: '0 auto 20px'
+            }} />
+            <p style={{ 
+              fontSize: '1.15rem',
+              fontWeight: '600',
+              color: 'rgba(29, 44, 73, 1)',
+              margin: '0'
+            }}>
+              Want to see how we reduce or eliminate chronic pain?
+            </p>
+          </div>
 
-          <p className={styles.bodyText}>
-            <strong>Most people know if we're the right solution by the end of the video because they see the whole process.</strong>
-          </p>
-          <p className={styles.bodyText}>
-            We'll email you the link so you can rewatch it anytime.
-          </p>
+          {/* Chad's story */}
+          <div style={{ marginBottom: '20px' }}>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '12px'
+            }}>
+              Watch session footage to see how subcellular repair works—eliminating Chad's pain.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '12px'
+            }}>
+              Chad spent 5 years throwing up from severe neck and back pain, calling in sick regularly.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 1)',
+              fontWeight: '500',
+              margin: '0'
+            }}>
+              Today, he has his life back—and the pain has never returned.
+            </p>
+          </div>
+
+          {/* What you'll see - Card with list */}
+          <div style={{
+            backgroundColor: 'rgba(29, 44, 73, 0.03)',
+            borderRadius: '10px',
+            padding: '18px 20px',
+            marginBottom: '20px'
+          }}>
+            <p style={{ 
+              fontSize: '1rem',
+              fontWeight: '600',
+              color: 'rgba(29, 44, 73, 1)',
+              marginBottom: '12px'
+            }}>
+              You'll see in his Zoom sessions:
+            </p>
+            <ul style={{ 
+              margin: '0',
+              paddingLeft: '20px',
+              listStyleType: 'disc'
+            }}>
+              <li style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'rgba(29, 44, 73, 0.9)', marginBottom: '8px' }}>
+                Highlights from his Pain Relief Consultation—sharing his fight to push through pain just to perform at work each day
+              </li>
+              <li style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'rgba(29, 44, 73, 0.9)', marginBottom: '8px' }}>
+                An unedited demonstration of the subcellular repair process during one of his Zoom sessions–yes, we work over Zoom nationwide
+              </li>
+              <li style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'rgba(29, 44, 73, 0.9)', marginBottom: '8px' }}>
+                The exact moment he realizes his pain is completely gone—neck, mid-back, & lower back
+              </li>
+              <li style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'rgba(29, 44, 73, 0.9)', margin: '0' }}>
+                His wife describes what life feels like now that his pain is finally gone
+              </li>
+            </ul>
+          </div>
+
+          {/* Closing statements */}
+          <div style={{ marginBottom: '20px' }}>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 1)',
+              fontWeight: '500',
+              marginBottom: '12px'
+            }}>
+              Most people know if we're the right solution by the end of the video because they see the whole process.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              margin: '0'
+            }}>
+              We'll email you the link so you can rewatch it anytime.
+            </p>
+          </div>
           
           {showChadComparisonSentence && (
-            <p className={styles.bodyText} style={{ fontStyle: 'italic' }}>
+            <p style={{ 
+              fontSize: '0.95rem',
+              lineHeight: '1.6',
+              color: 'rgba(29, 44, 73, 0.85)',
+              fontStyle: 'italic',
+              marginBottom: '20px'
+            }}>
               While Chad's case demonstrates neck and back pain, the subcellular repair process works the same for your <strong>{conditionText}</strong>.
             </p>
           )}
 
-          <p className={styles.bodyText} style={{ textAlign: 'center' }}>
-            <strong>Enter your information below to get instant access:</strong>
+          {/* Form CTA */}
+          <p style={{ 
+            fontSize: '1.1rem',
+            fontWeight: '600',
+            color: 'rgba(29, 44, 73, 1)',
+            textAlign: 'center',
+            marginBottom: '20px'
+          }}>
+            Enter your information below to get instant access:
           </p>
 
           <form onSubmit={handleSubmit} className={styles.contactForm}>
