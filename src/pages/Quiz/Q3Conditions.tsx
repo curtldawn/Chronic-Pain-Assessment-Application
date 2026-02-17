@@ -55,10 +55,12 @@ export const Q3Conditions = () => {
 
   const handleContinue = async () => {
     setConditions(selected);
-    setConditionOther(otherText);
-
-    // Check if "Other" was filled in
+    
+    // Check if "Other" was filled in - only if checkbox is checked AND text has content
     const hasOther = showOtherField && otherText.trim().length > 0;
+    
+    // Set or clear the conditionOther in global state
+    setConditionOther(hasOther ? otherText : '');
 
     // Analyze conditions via backend
     try {
