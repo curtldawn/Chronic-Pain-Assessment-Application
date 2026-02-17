@@ -26,6 +26,7 @@ export const DisqualifiedNonTreatable = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [consentToText, setConsentToText] = useState(false);
 
   // Get the non-treatable condition labels
   const nonTreatableLabels = state.nonTreatableConditions
