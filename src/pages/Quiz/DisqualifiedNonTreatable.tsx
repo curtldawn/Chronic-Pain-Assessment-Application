@@ -62,7 +62,8 @@ export const DisqualifiedNonTreatable = () => {
       console.error('Error submitting notification request:', error);
     }
 
-    alert('Thank you! We\'ll notify you if new techniques are developed.');
+    // Navigate to thank you page
+    navigate('/quiz/thank-you-non-treatable');
   };
 
   const handleNoThanks = () => {
