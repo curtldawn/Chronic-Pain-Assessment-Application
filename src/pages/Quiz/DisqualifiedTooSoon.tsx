@@ -66,7 +66,7 @@ export const DisqualifiedTooSoon = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className={styles.headline}>Thank You for Your Interest</h1>
+        <h1 className={styles.headline} style={{ textAlign: 'center' }}>Thank You for Your Interest</h1>
 
         <div className={styles.disqualificationContent}>
           {/* Section 1: Current Status */}
@@ -84,11 +84,24 @@ export const DisqualifiedTooSoon = () => {
             </p>
           </div>
 
-          {/* Section 2: The Science */}
-          <div style={{ marginBottom: '24px' }}>
-            <p className={styles.bodyText}>
+          {/* Section 2: Key Insight - Highlighted */}
+          <div style={{ 
+            borderLeft: '3px solid rgba(29, 44, 73, 0.4)',
+            paddingLeft: '20px',
+            marginBottom: '24px'
+          }}>
+            <p className={styles.bodyText} style={{ marginBottom: '0', fontWeight: '500' }}>
               If your pain continues beyond 6 months, it's a strong indicator that subcellular damage is present—and that's when subcellular repair might become the solution.
             </p>
+          </div>
+
+          {/* Section 3: The Science - Subtle card */}
+          <div style={{ 
+            backgroundColor: 'rgba(29, 44, 73, 0.02)', 
+            borderRadius: '12px', 
+            padding: '20px 24px',
+            marginBottom: '24px'
+          }}>
             <p className={styles.bodyText}>
               When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
             </p>
@@ -103,7 +116,7 @@ export const DisqualifiedTooSoon = () => {
             </p>
           </div>
 
-          {/* Section 3: CTA Callout Box */}
+          {/* Section 4: CTA Callout Box */}
           <div style={{ 
             backgroundColor: 'rgba(29, 44, 73, 0.06)', 
             borderLeft: '4px solid rgba(29, 44, 73, 0.8)',
@@ -115,7 +128,7 @@ export const DisqualifiedTooSoon = () => {
               <strong>To avoid losing contact with us, would you like us to check in later?</strong>
             </p>
             <p className={styles.bodyText} style={{ marginBottom: '0' }}>
-              Once it's been 6 months since your injury or last surgery, we'll email you a link to retake this assessment and send you a text letting you know the email has arrived.
+              Once it's been 6 months since your pain started, we'll email you a link to retake this assessment and send you a text letting you know the email has arrived.
             </p>
           </div>
 
