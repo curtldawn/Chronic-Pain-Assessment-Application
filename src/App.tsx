@@ -35,6 +35,7 @@ const CongratulationsAlternative = React.lazy(() => import('./pages/Quiz/Congrat
 const Welcome = React.lazy(() => import('./pages/Quiz/Welcome'));
 const TermsAndConditions = React.lazy(() => import('./pages/Quiz/TermsAndConditions'));
 const PrivacyPolicy = React.lazy(() => import('./pages/Quiz/PrivacyPolicy'));
+const ThankYouNonTreatable = React.lazy(() => import('./pages/Quiz/ThankYouNonTreatable'));
 
 /**
  * Loading fallback component
