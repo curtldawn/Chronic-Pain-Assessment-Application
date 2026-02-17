@@ -319,6 +319,15 @@
   .navigationButtons {
     flex-direction: column;
   }
+  
+  .bodyText,
+  .educationText {
+    font-size: 1rem;
+  }
+  
+  .bulletList li {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -328,6 +337,24 @@
 
   .quizContent {
     padding: 24px 16px;
+  }
+  
+  .headline {
+    font-size: 1.5rem;
+  }
+  
+  .bodyText,
+  .educationText {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+  
+  .bulletList li {
+    font-size: 0.9375rem;
+  }
+  
+  .checkboxText {
+    font-size: 0.9375rem;
   }
 }
 
