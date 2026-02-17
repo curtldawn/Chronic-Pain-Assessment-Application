@@ -32,48 +32,165 @@ export const AlternativePrimaryCellExplanation = () => {
         transition={{ duration: 0.4 }}
       >
         <div className={styles.educationContent}>
-          <p className={styles.educationText}>
-            Many chronic pain conditions stem from subcellular damage—damage that can be repaired.
+          {/* Opening - Highlighted */}
+          <div style={{
+            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            borderRadius: '10px',
+            padding: '18px 20px',
+            marginBottom: '24px'
+          }}>
+            <p style={{ 
+              fontSize: '1.1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              margin: '0'
+            }}>
+              Many chronic pain conditions stem from subcellular damage—damage that can be repaired.
+            </p>
+          </div>
+
+          {/* Primary Cell Introduction */}
+          <p style={{ 
+            fontSize: '1.1rem',
+            fontWeight: '600',
+            color: 'rgba(29, 44, 73, 1)',
+            textAlign: 'center',
+            marginBottom: '16px'
+          }}>
+            This is where your Primary Cell comes in:
           </p>
-          <p className={styles.educationText}>
-            <strong>This is where your Primary Cell comes in:</strong>
-          </p>
-          <p className={styles.educationText}>
-            Researchers discovered your Primary Cell—a unique master cell that controls the pattern and function of every other cell in your body.**
-          </p>
-          <p className={styles.educationText}>
-            Unlike regular cells, it never dies. It lasts your entire life.
-          </p>
-          <p className={styles.educationText}>
-            When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
-          </p>
-          <p className={styles.educationText}>
-            <strong>Here's how this can cause your pain:</strong>
-          </p>
-          <p className={styles.educationText}>
-            Your Primary Cell is like a master template your body follows. When an area of it is damaged, your body keeps following that disrupted pattern—and this unhealthy pattern causes pain where you hurt.
-          </p>
-          <p className={styles.educationText}>
-            This damage can persist in your Primary Cell throughout your life.
-          </p>
-          <p className={styles.educationText}>
-            When it's repaired, it creates a healthy pattern—relieving your pain.
-          </p>
-          <p className={styles.educationText}>
-            <strong>The result?</strong>
-          </p>
-          <p className={styles.educationText}>
-            For years, in real-world practice, some people find their pain permanently eliminated, while others experience significant reduction that lasts long-term.*
-          </p>
-          <p className={styles.educationText}>
-            This is not pain management—this is repairing the subcellular source.
-          </p>
+
+          <div style={{ marginBottom: '20px' }}>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '14px'
+            }}>
+              Researchers discovered your <span style={{
+                fontWeight: '600',
+                color: 'rgba(29, 44, 73, 1)',
+                backgroundColor: 'rgba(29, 44, 73, 0.08)',
+                padding: '2px 8px',
+                borderRadius: '4px'
+              }}>Primary Cell</span>—a unique master cell that controls the pattern and function of every other cell in your body.**
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '14px'
+            }}>
+              Unlike regular cells, it never dies. It lasts your entire life.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              margin: '0'
+            }}>
+              When you get injured, have surgery, live with ongoing wear-and-tear, or your pain develops over time, your Primary Cell can sustain subcellular damage.*
+            </p>
+          </div>
+
+          {/* How it causes pain - Key insight */}
+          <div style={{ 
+            margin: '24px 0',
+            textAlign: 'center'
+          }}>
+            <div style={{
+              width: '60px',
+              height: '2px',
+              backgroundColor: 'rgba(29, 44, 73, 0.2)',
+              margin: '0 auto 20px'
+            }} />
+            <p style={{ 
+              fontSize: '1.15rem',
+              fontWeight: '600',
+              color: 'rgba(29, 44, 73, 1)',
+              margin: '0 0 16px 0'
+            }}>
+              Here's how this can cause your pain:
+            </p>
+          </div>
+
+          <div style={{ 
+            borderLeft: '3px solid rgba(29, 44, 73, 0.3)',
+            paddingLeft: '18px',
+            marginBottom: '20px'
+          }}>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '14px'
+            }}>
+              Your Primary Cell is like a master template your body follows. When an area of it is damaged, your body keeps following that disrupted pattern—and this unhealthy pattern causes pain where you hurt.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '14px'
+            }}>
+              This damage can persist in your Primary Cell throughout your life.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 1)',
+              fontWeight: '500',
+              margin: '0'
+            }}>
+              When it's repaired, it creates a healthy pattern—relieving your pain.
+            </p>
+          </div>
+
+          {/* The Result - Highlighted */}
+          <div style={{
+            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            borderRadius: '10px',
+            padding: '18px 20px',
+            marginBottom: '20px'
+          }}>
+            <p style={{ 
+              fontSize: '1rem',
+              fontWeight: '600',
+              color: 'rgba(29, 44, 73, 1)',
+              marginBottom: '10px'
+            }}>
+              The result?
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '10px'
+            }}>
+              For years, in real-world practice, some people find their pain <strong>permanently eliminated</strong>, while others experience significant reduction that lasts long-term.*
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 1)',
+              fontWeight: '500',
+              fontStyle: 'italic',
+              margin: '0'
+            }}>
+              This is not pain management—this is repairing the subcellular source.
+            </p>
+          </div>
           
-          <div style={{ marginTop: '32px', lineHeight: '1.4' }}>
-            <p className={styles.disclaimerText}>
+          {/* Footnotes */}
+          <div style={{ 
+            borderTop: '1px solid rgba(29, 44, 73, 0.1)',
+            paddingTop: '12px',
+            marginBottom: '24px'
+          }}>
+            <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', fontStyle: 'italic', margin: '0 0 4px 0' }}>
               *Based on clinical observations and ongoing research
             </p>
-            <p className={styles.disclaimerText}>
+            <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', fontStyle: 'italic', margin: '0' }}>
               **Journal of Prenatal & Perinatal Psychology & Health (2024, 2025)
             </p>
           </div>
