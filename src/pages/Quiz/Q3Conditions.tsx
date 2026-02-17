@@ -35,7 +35,7 @@ export const Q3Conditions = () => {
   const { state, setConditions, setConditionOther, setQualificationStatus } = useQuiz();
   const [selected, setSelected] = useState<string[]>(state.conditions);
   const [otherText, setOtherText] = useState(state.conditionOther);
-  const [showOtherField, setShowOtherField] = useState(false);
+  const [showOtherField, setShowOtherField] = useState(state.conditionOther.length > 0);
 
   const handleToggle = (id: string) => {
     if (selected.includes(id)) {
