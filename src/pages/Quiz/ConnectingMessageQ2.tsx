@@ -45,7 +45,7 @@ export const ConnectingMessageQ2 = () => {
           
           {/* The Key Insight - highlighted block */}
           <div style={{
-            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            backgroundColor: 'rgba(239, 246, 255, 1)',
             borderRadius: '12px',
             padding: '24px 28px',
             marginBottom: '24px',

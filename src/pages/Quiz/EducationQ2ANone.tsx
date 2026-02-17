@@ -66,7 +66,7 @@ export const EducationQ2ANone = () => {
 
           {/* The Solution - hopeful, highlighted */}
           <div style={{
-            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            backgroundColor: 'rgba(236, 253, 245, 1)',
             borderRadius: '10px',
             padding: '18px 20px',
             marginBottom: '20px'
