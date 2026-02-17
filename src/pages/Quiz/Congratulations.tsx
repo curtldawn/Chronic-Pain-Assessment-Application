@@ -363,7 +363,7 @@ export const Congratulations = () => {
                 </span>
               </label>
               <p style={{ fontSize: '0.8125rem', color: 'rgba(107, 114, 128, 1)', marginTop: '16px', lineHeight: '1.5' }}>
-                By proceeding, you confirm you've reviewed our <a href="#" style={{ color: 'rgba(29, 44, 73, 1)', textDecoration: 'underline' }}>SMS & Privacy Policy</a>.
+                By proceeding, you confirm you've reviewed our <a href="/quiz/privacy-policy" style={{ color: 'rgba(29, 44, 73, 1)', textDecoration: 'underline' }}>SMS & Privacy Policy</a>.
               </p>
             </div>
 
