@@ -171,7 +171,7 @@ export const Q3Conditions = () => {
               <input
                 type="checkbox"
                 checked={showOtherField}
-                onChange={(e) => setShowOtherField(e.target.checked)}
+                onChange={(e) => handleOtherToggle(e.target.checked)}
                 className={styles.checkbox}
               />
               <span className={styles.checkboxText}>Other</span>
