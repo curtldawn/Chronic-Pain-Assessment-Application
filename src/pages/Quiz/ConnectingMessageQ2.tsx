@@ -32,14 +32,52 @@ export const ConnectingMessageQ2 = () => {
         transition={{ duration: 0.4 }}
       >
         <div className={styles.educationContent}>
-          <p className={styles.educationText}>
+          {/* Opening hook - centered, draws attention */}
+          <p style={{ 
+            fontSize: '1.2rem',
+            fontWeight: '600',
+            color: 'rgba(29, 44, 73, 1)',
+            textAlign: 'center',
+            marginBottom: '28px'
+          }}>
             Here's what all these treatments have in common:
           </p>
-          <p className={styles.educationText}>
-            They address symptoms or functional structural issues, but <strong>they do not repair the subcellular damage that can constantly recreate your pain.</strong>
-          </p>
-          <p className={styles.educationText}>
-            That's why the relief is temporary or incomplete—the subcellular source was never addressed.
+          
+          {/* The Key Insight - highlighted block */}
+          <div style={{
+            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            borderRadius: '12px',
+            padding: '24px 28px',
+            marginBottom: '24px',
+            position: 'relative'
+          }}>
+            <p style={{ 
+              fontSize: '1.1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              margin: '0'
+            }}>
+              They address symptoms or functional structural issues, but <span style={{ 
+                fontWeight: '600', 
+                color: 'rgba(29, 44, 73, 1)',
+                backgroundColor: 'rgba(29, 44, 73, 0.08)',
+                padding: '2px 6px',
+                borderRadius: '4px'
+              }}>they do not repair the subcellular damage</span> that can constantly recreate your pain.
+            </p>
+          </div>
+
+          {/* The Conclusion - clean, impactful */}
+          <p style={{ 
+            fontSize: '1.05rem',
+            lineHeight: '1.7',
+            color: 'rgba(29, 44, 73, 0.85)',
+            textAlign: 'center',
+            marginBottom: '32px',
+            fontStyle: 'italic'
+          }}>
+            That's why the relief is temporary or incomplete—<br />
+            <span style={{ fontWeight: '500', color: 'rgba(29, 44, 73, 1)' }}>the subcellular source was never addressed.</span>
           </p>
 
           <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
