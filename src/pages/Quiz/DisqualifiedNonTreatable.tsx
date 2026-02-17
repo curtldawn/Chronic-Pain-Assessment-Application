@@ -82,29 +82,64 @@ export const DisqualifiedNonTreatable = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className={styles.headline}>Thank You for Your Interest</h1>
+        <h1 className={styles.headline} style={{ textAlign: 'center' }}>Thank You for Your Interest</h1>
 
         <div className={styles.disqualificationContent}>
-          <p className={styles.bodyText}>
-            Based on your answer, cellular repair techniques for your specific condition(s) don't exist yet.
-          </p>
-          <p className={styles.bodyText}>
-            The clinical teams behind this research are continuously working to expand the applications of cellular repair to new conditions—but at this time, we don't have proven techniques for:
-          </p>
-          {displayLabels.length > 0 ? (
-            <ul className={styles.bulletList}>
-              {displayLabels.map((label, index) => (
-                <li key={index}>{label}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className={styles.bodyText}><em>the conditions you selected</em></p>
-          )}
-          <p className={styles.bodyText}>
+          {/* Explanation section */}
+          <div style={{ 
+            backgroundColor: 'rgba(29, 44, 73, 0.03)', 
+            borderRadius: '12px', 
+            padding: '20px 24px',
+            marginBottom: '24px'
+          }}>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '16px'
+            }}>
+              Based on your answer, subcellular repair techniques for your specific condition(s) don't exist yet.
+            </p>
+            <p style={{ 
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
+              marginBottom: '16px'
+            }}>
+              The clinical teams behind this research are continuously working to expand the applications of subcellular repair to new conditions—but at this time, we don't have proven techniques for:
+            </p>
+            {displayLabels.length > 0 ? (
+              <ul style={{ 
+                margin: '0',
+                paddingLeft: '20px',
+                color: 'rgba(29, 44, 73, 1)',
+                fontWeight: '500'
+              }}>
+                {displayLabels.map((label, index) => (
+                  <li key={index} style={{ marginBottom: '4px' }}>{label}</li>
+                ))}
+              </ul>
+            ) : (
+              <p style={{ margin: '0', fontStyle: 'italic', color: 'rgba(29, 44, 73, 0.8)' }}>the conditions you selected</p>
+            )}
+          </div>
+
+          {/* CTA section */}
+          <p style={{ 
+            fontSize: '1rem',
+            lineHeight: '1.7',
+            color: 'rgba(29, 44, 73, 0.9)',
+            marginBottom: '8px'
+          }}>
             We'd be happy to notify you if new techniques are developed for your condition in the future.
           </p>
-          <p className={styles.bodyText}>
-            <strong>Enter your information below:</strong>
+          <p style={{ 
+            fontSize: '1rem',
+            fontWeight: '600',
+            color: 'rgba(29, 44, 73, 1)',
+            marginBottom: '20px'
+          }}>
+            Enter your information below:
           </p>
 
           <form onSubmit={handleSubmit} className={styles.contactForm}>
