@@ -151,14 +151,8 @@ export const PrimaryCellExplanation = () => {
             }} />
           </div>
 
-          {/* Explanation section - ALTERNATIVE 3: Short horizontal divider above */}
+          {/* Explanation section */}
           <div style={{ marginBottom: '20px' }}>
-            <div style={{
-              width: '40px',
-              height: '2px',
-              backgroundColor: 'rgba(29, 44, 73, 0.15)',
-              marginBottom: '16px'
-            }} />
             <p style={{ 
               fontSize: '1rem',
               lineHeight: '1.7',
