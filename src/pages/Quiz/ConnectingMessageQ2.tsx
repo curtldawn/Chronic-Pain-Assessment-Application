@@ -57,13 +57,7 @@ export const ConnectingMessageQ2 = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               margin: '0'
             }}>
-              They address symptoms or functional structural issues, but <span style={{ 
-                fontWeight: '600', 
-                color: 'rgba(29, 44, 73, 1)',
-                backgroundColor: 'rgba(29, 44, 73, 0.08)',
-                padding: '2px 6px',
-                borderRadius: '4px'
-              }}>they do not repair the subcellular damage</span> that can constantly recreate your pain.
+              They address symptoms or functional structural issues, but <strong>they do not repair the subcellular damage</strong> that can constantly recreate your pain.
             </p>
           </div>
 
@@ -73,11 +67,9 @@ export const ConnectingMessageQ2 = () => {
             lineHeight: '1.7',
             color: 'rgba(29, 44, 73, 0.85)',
             textAlign: 'center',
-            marginBottom: '32px',
-            fontStyle: 'italic'
+            marginBottom: '32px'
           }}>
-            That's why the relief is temporary or incomplete—<br />
-            <span style={{ fontWeight: '500', color: 'rgba(29, 44, 73, 1)' }}>the subcellular source was never addressed.</span>
+            <strong>The subcellular source was never addressed.</strong>
           </p>
 
           <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
