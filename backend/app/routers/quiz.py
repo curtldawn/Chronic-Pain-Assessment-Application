@@ -146,15 +146,15 @@ def analyze_conditions(conditions: List[str], has_other: bool = False) -> QuizAn
             requires_manual_review=True,
         )
     
-    # Case 2: Other + treatable only
+    # Case 2: Other + treatable only - should still go to manual review first
     if has_other and has_treatable and not has_non_treatable:
         return QuizAnalysisResponse(
-            qualification_status="qualified",
+            qualification_status="manual_review",
             treatable_conditions=treatable,
             non_treatable_conditions=[],
-            should_show_primary_cell=True,
-            should_show_alternative_primary_cell=False,
-            requires_manual_review=True,  # Flag for review but proceed
+            should_show_primary_cell=False,
+            should_show_alternative_primary_cell=True,
+            requires_manual_review=True,
         )
     
     # Case 3: Other + non-treatable (with or without treatable)
