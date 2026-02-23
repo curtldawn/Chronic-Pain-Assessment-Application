@@ -7,10 +7,23 @@
  * - All API requests automatically protected with CSRF tokens
  */
 
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { QuizProvider } from '@context/QuizContext';
 import { useCsrfInit } from './hooks/useCsrf';
+
+/**
+ * ScrollToTop component - scrolls to top on route change
+ */
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 /**
  * Lazy-loaded Quiz pages
