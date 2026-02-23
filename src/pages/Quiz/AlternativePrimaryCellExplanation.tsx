@@ -175,7 +175,6 @@ export const AlternativePrimaryCellExplanation = () => {
             }}>
               This is not pain management—this is repairing the subcellular source.
             </p>
-            </p>
           </div>
           
           {/* Footnotes */}
