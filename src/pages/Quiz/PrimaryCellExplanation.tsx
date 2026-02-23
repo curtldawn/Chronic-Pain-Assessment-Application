@@ -104,7 +104,7 @@ export const PrimaryCellExplanation = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               marginBottom: '14px'
             }}>
-              Researchers discovered your <strong>Primary Cell</strong>—a unique master cell that controls the pattern and function of every other cell in your body.**
+              Your <strong>Primary Cell</strong>—a unique master cell that controls the pattern and function of every other cell in your body.**
             </p>
             <p style={{ 
               fontSize: '1rem',
@@ -139,10 +139,17 @@ export const PrimaryCellExplanation = () => {
               fontSize: '1.15rem',
               fontWeight: '600',
               color: 'rgba(29, 44, 73, 1)',
-              margin: '0 0 16px 0'
+              margin: '0'
             }}>
               Here's how this can cause your pain:
             </p>
+            <div style={{
+              width: '60px',
+              height: '2px',
+              backgroundColor: 'rgba(29, 44, 73, 0.2)',
+              margin: '20px auto 0'
+            }} />
+          </div>
           </div>
 
           {/* Explanation section - ALTERNATIVE 3: Short horizontal divider above */}
