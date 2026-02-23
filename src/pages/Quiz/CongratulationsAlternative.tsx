@@ -182,10 +182,9 @@ export const CongratulationsAlternative = () => {
 
           {hasNonTreatable && (
             <p style={{ 
-              fontSize: '0.95rem',
-              lineHeight: '1.6',
-              color: 'rgba(29, 44, 73, 0.8)',
-              fontStyle: 'italic',
+              fontSize: '1rem',
+              lineHeight: '1.7',
+              color: 'rgba(29, 44, 73, 0.9)',
               marginBottom: '20px'
             }}>
               However, techniques to address <strong>{nonTreatableText}</strong> do not currently exist. And the clinical teams are continuously researching new solutions.
