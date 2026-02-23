@@ -98,13 +98,7 @@ export const EducationQ2ANone = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               margin: '0'
             }}>
-              It works through something researchers call your <span style={{
-                fontWeight: '600',
-                color: 'rgba(29, 44, 73, 1)',
-                backgroundColor: 'rgba(29, 44, 73, 0.08)',
-                padding: '2px 8px',
-                borderRadius: '4px'
-              }}>Primary Cell</span>.
+              It works through something researchers call your <strong>Primary Cell</strong>.
             </p>
           </div>
 
