@@ -51,14 +51,13 @@ export const EducationQ2A = () => {
             But peer-reviewed research has documented its existence and how these damage patterns can persist indefinitely.**
           </p>
           
-          {/* The Consequence - emphasized */}
+          {/* The Consequence - emphasized - ALTERNATIVE 1: Slight indent with increased font weight */}
           <p style={{ 
-            fontSize: '1.05rem',
+            fontSize: '1.08rem',
             lineHeight: '1.7',
             color: 'rgba(29, 44, 73, 1)',
-            fontWeight: '500',
-            borderLeft: '3px solid rgba(29, 44, 73, 0.3)',
-            paddingLeft: '16px',
+            fontWeight: '600',
+            marginLeft: '16px',
             marginBottom: '20px'
           }}>
             This means pain caused by subcellular damage can continue throughout your life—unless the damage is repaired.
@@ -97,13 +96,7 @@ export const EducationQ2A = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               margin: '0'
             }}>
-              It works through something researchers call your <span style={{
-                fontWeight: '600',
-                color: 'rgba(29, 44, 73, 1)',
-                backgroundColor: 'rgba(29, 44, 73, 0.08)',
-                padding: '2px 8px',
-                borderRadius: '4px'
-              }}>Primary Cell</span>.
+              It works through something researchers call your <strong>Primary Cell</strong>.
             </p>
           </div>
 
