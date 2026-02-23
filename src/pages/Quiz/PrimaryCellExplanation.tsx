@@ -104,13 +104,7 @@ export const PrimaryCellExplanation = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               marginBottom: '14px'
             }}>
-              Researchers discovered your <span style={{
-                fontWeight: '600',
-                color: 'rgba(29, 44, 73, 1)',
-                backgroundColor: 'rgba(29, 44, 73, 0.08)',
-                padding: '2px 8px',
-                borderRadius: '4px'
-              }}>Primary Cell</span>—a unique master cell that controls the pattern and function of every other cell in your body.**
+              Researchers discovered your <strong>Primary Cell</strong>—a unique master cell that controls the pattern and function of every other cell in your body.**
             </p>
             <p style={{ 
               fontSize: '1rem',
@@ -151,11 +145,14 @@ export const PrimaryCellExplanation = () => {
             </p>
           </div>
 
-          <div style={{ 
-            borderLeft: '3px solid rgba(29, 44, 73, 0.3)',
-            paddingLeft: '18px',
-            marginBottom: '20px'
-          }}>
+          {/* Explanation section - ALTERNATIVE 3: Short horizontal divider above */}
+          <div style={{ marginBottom: '20px' }}>
+            <div style={{
+              width: '40px',
+              height: '2px',
+              backgroundColor: 'rgba(29, 44, 73, 0.15)',
+              marginBottom: '16px'
+            }} />
             <p style={{ 
               fontSize: '1rem',
               lineHeight: '1.7',
@@ -210,8 +207,7 @@ export const PrimaryCellExplanation = () => {
               fontSize: '1rem',
               lineHeight: '1.7',
               color: 'rgba(29, 44, 73, 1)',
-              fontWeight: '500',
-              fontStyle: 'italic',
+              fontWeight: '600',
               margin: '0'
             }}>
               This is not pain management—this is repairing the subcellular source.
