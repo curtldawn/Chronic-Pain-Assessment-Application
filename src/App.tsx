@@ -96,6 +96,7 @@ const App: React.FC = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <QuizProvider>
         <React.Suspense fallback={<LoadingFallback />}>
           <Routes>
