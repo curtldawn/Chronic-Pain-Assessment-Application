@@ -114,12 +114,8 @@ export const AlternativePrimaryCellExplanation = () => {
             }} />
           </div>
 
-          {/* Explanation section - ALTERNATIVE 4: Subtle bottom border divider */}
-          <div style={{ 
-            marginBottom: '20px',
-            paddingBottom: '20px',
-            borderBottom: '1px solid rgba(29, 44, 73, 0.1)'
-          }}>
+          {/* Explanation section */}
+          <div style={{ marginBottom: '20px' }}>
             <p style={{ 
               fontSize: '1rem',
               lineHeight: '1.7',
