@@ -150,7 +150,6 @@ export const PrimaryCellExplanation = () => {
               margin: '20px auto 0'
             }} />
           </div>
-          </div>
 
           {/* Explanation section - ALTERNATIVE 3: Short horizontal divider above */}
           <div style={{ marginBottom: '20px' }}>
