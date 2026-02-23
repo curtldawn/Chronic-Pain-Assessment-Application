@@ -69,7 +69,7 @@ export const ConnectingMessageQ2 = () => {
             textAlign: 'center',
             marginBottom: '32px'
           }}>
-            <strong>The subcellular source was never addressed.</strong>
+            That's why the relief is temporary or incomplete—<strong>the subcellular source was never addressed.</strong>
           </p>
 
           <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end' }}>
