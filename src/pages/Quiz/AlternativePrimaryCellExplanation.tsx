@@ -67,13 +67,7 @@ export const AlternativePrimaryCellExplanation = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               marginBottom: '14px'
             }}>
-              Researchers discovered your <span style={{
-                fontWeight: '600',
-                color: 'rgba(29, 44, 73, 1)',
-                backgroundColor: 'rgba(29, 44, 73, 0.08)',
-                padding: '2px 8px',
-                borderRadius: '4px'
-              }}>Primary Cell</span>—a unique master cell that controls the pattern and function of every other cell in your body.**
+              Researchers discovered your <strong>Primary Cell</strong>—a unique master cell that controls the pattern and function of every other cell in your body.**
             </p>
             <p style={{ 
               fontSize: '1rem',
@@ -114,10 +108,11 @@ export const AlternativePrimaryCellExplanation = () => {
             </p>
           </div>
 
+          {/* Explanation section - ALTERNATIVE 4: Subtle bottom border divider */}
           <div style={{ 
-            borderLeft: '3px solid rgba(29, 44, 73, 0.3)',
-            paddingLeft: '18px',
-            marginBottom: '20px'
+            marginBottom: '20px',
+            paddingBottom: '20px',
+            borderBottom: '1px solid rgba(29, 44, 73, 0.1)'
           }}>
             <p style={{ 
               fontSize: '1rem',
@@ -173,11 +168,11 @@ export const AlternativePrimaryCellExplanation = () => {
               fontSize: '1rem',
               lineHeight: '1.7',
               color: 'rgba(29, 44, 73, 1)',
-              fontWeight: '500',
-              fontStyle: 'italic',
+              fontWeight: '600',
               margin: '0'
             }}>
               This is not pain management—this is repairing the subcellular source.
+            </p>
             </p>
           </div>
           
