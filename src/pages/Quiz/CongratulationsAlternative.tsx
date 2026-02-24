@@ -311,6 +311,18 @@ export const CongratulationsAlternative = () => {
             </p>
           )}
 
+          {showChadOtherSentence && (
+            <p style={{ 
+              fontSize: '0.95rem',
+              lineHeight: '1.6',
+              color: 'rgba(29, 44, 73, 0.85)',
+              fontStyle: 'italic',
+              marginBottom: '20px'
+            }}>
+              While Chad's case demonstrates neck and back pain, the subcellular repair process works the same for all eligible cases—possibly the one you submitted.
+            </p>
+          )}
+
           {/* Form CTA */}
           <p style={{ 
             fontSize: '1.1rem',
