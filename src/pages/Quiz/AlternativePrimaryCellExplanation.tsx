@@ -67,7 +67,7 @@ export const AlternativePrimaryCellExplanation = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               marginBottom: '14px'
             }}>
-              Your <strong>Primary Cell</strong>—a unique master cell that controls the pattern and function of every other cell in your body.**
+              Your <strong>Primary Cell</strong> is a unique master cell that controls the pattern and function of every other cell in your body.**
             </p>
             <p style={{ 
               fontSize: '1rem',
