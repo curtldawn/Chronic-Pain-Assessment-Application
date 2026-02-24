@@ -12,9 +12,9 @@ import QuizFooter from './QuizFooter';
 import styles from './Quiz.module.css';
 
 const URGENCY_OPTIONS = [
-  { id: 'very_urgent', label: 'Very urgent - I'm sick and tired of this pain and ready to do something about it now' },
-  { id: 'urgent', label: 'Urgent - I'd like to address this within the next few months' },
-  { id: 'moderately_urgent', label: 'Moderately urgent - I'm exploring options but not in a rush' },
+  { id: 'very_urgent', label: "Very urgent - I'm sick and tired of this pain and ready to do something about it now" },
+  { id: 'urgent', label: "Urgent - I'd like to address this within the next few months" },
+  { id: 'moderately_urgent', label: "Moderately urgent - I'm exploring options but not in a rush" },
   { id: 'not_urgent', label: 'Not urgent - Just gathering information for now' },
 ];
 
