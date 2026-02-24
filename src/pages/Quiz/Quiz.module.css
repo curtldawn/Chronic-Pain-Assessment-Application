@@ -475,7 +475,8 @@
   .backArrow {
     top: 16px;
     left: 16px;
-    font-size: 1.25rem;
+    font-size: 1.375rem;
+    padding: 10px 14px;
   }
   
   .footerLinks {
