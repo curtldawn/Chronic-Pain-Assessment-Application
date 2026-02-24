@@ -88,6 +88,8 @@ export const CongratulationsAlternative = () => {
   const hasNeckOrBackPain = treatableConditionIds.some(id => NECK_BACK_PAIN_IDS.includes(id));
   // Show the "While Chad's case..." sentence only if user did NOT select neck or back pain
   const showChadComparisonSentence = !hasNeckOrBackPain && treatableLabels.length > 0;
+  // Show alternative Chad sentence for "Other only" or "Other + non-treatable" (no treatable)
+  const showChadOtherSentence = !hasTreatable;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
