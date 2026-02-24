@@ -26,10 +26,12 @@ export const Q6AnnualSpending = () => {
   const handleSelect = (id: string) => {
     setSelected(id);
     setAnnualSpending(id);
-    // Auto-advance to next question
-    setTimeout(() => {
+  };
+
+  const handleContinue = () => {
+    if (selected) {
       navigate('/quiz/q7-open-questions');
-    }, 300);
+    }
   };
 
   const handleBack = () => {
@@ -52,17 +54,34 @@ export const Q6AnnualSpending = () => {
             On average, how much do you currently pay out of pocket for your chronic pain every year (co-pays, deductibles, treatments not covered by insurance, etc.)?
           </h2>
 
-          <div className={styles.optionsGrid}>
+          <div className={styles.checkboxGrid}>
             {SPENDING_OPTIONS.map((option) => (
-              <button
+              <label
                 key={option.id}
-                className={`${styles.optionButton} ${selected === option.id ? styles.selected : ''}`}
-                onClick={() => handleSelect(option.id)}
+                className={`${styles.checkboxLabel} ${selected === option.id ? styles.selected : ''}`}
                 data-testid={`option-${option.id}`}
               >
-                {option.label}
-              </button>
+                <input
+                  type="checkbox"
+                  checked={selected === option.id}
+                  onChange={() => handleSelect(option.id)}
+                  className={styles.checkbox}
+                />
+                <span className={styles.checkboxText}>{option.label}</span>
+              </label>
             ))}
+          </div>
+
+          <div className={styles.navigationButtons} style={{ justifyContent: 'flex-end', marginTop: '24px' }}>
+            <Button
+              variant="primary"
+              size="large"
+              onClick={handleContinue}
+              disabled={!selected}
+              data-testid="continue-button"
+            >
+              Continue
+            </Button>
           </div>
         </div>
         <QuizFooter />
