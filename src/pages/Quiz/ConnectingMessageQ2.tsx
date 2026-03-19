@@ -57,7 +57,7 @@ export const ConnectingMessageQ2 = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               margin: '0'
             }}>
-              They address symptoms or functional structural issues, but <strong>they do not repair the subcellular damage</strong> that can constantly recreate your pain.
+              They address symptoms or functional structural issues, but <strong>they do not repair the subcellular damage</strong> that can keep recreating your pain.
             </p>
           </div>
 

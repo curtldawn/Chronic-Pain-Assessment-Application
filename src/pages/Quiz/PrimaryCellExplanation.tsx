@@ -82,7 +82,7 @@ export const PrimaryCellExplanation = () => {
               color: 'rgba(29, 44, 73, 0.9)',
               margin: '0'
             }}>
-              <strong>Good news:</strong> Because you have <strong>{conditionTextFormatted}</strong>, there's a strong possibility your pain is caused by subcellular damage—which means it can be repaired.
+              <strong>Encouraging insight:</strong> Because you have <strong>{conditionTextFormatted}</strong>, there's a strong possibility your pain is caused by subcellular damage—which means it can be repaired.
             </p>
           </div>
 

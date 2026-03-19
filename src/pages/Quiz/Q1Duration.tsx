@@ -118,7 +118,7 @@ export const Q1Duration = () => {
                     margin: '0',
                     fontStyle: 'italic'
                   }}>
-                    So, what's keeping the pain alive?
+                    So, what's keeping the pain going?
                   </p>
                   <div style={{
                     width: '60px',
