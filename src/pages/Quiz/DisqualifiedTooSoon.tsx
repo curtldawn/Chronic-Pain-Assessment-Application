@@ -84,12 +84,19 @@ export const DisqualifiedTooSoon = () => {
             </p>
           </div>
 
-          {/* Section 2: Key Insight - ALTERNATIVE 5: Just bolder text with extra top margin */}
+          {/* Section 2: Key Insight - Light background tint style */}
           <div style={{ 
             marginTop: '8px',
             marginBottom: '24px'
           }}>
-            <p className={styles.bodyText} style={{ marginBottom: '0', fontWeight: '600', fontSize: '1.05rem' }}>
+            <p className={styles.bodyText} style={{ 
+              marginBottom: '0', 
+              fontWeight: '500', 
+              fontSize: '1.05rem',
+              backgroundColor: 'rgba(29, 44, 73, 0.04)',
+              padding: '14px 18px',
+              borderRadius: '8px'
+            }}>
               If your pain continues beyond 6 months, it's a strong indicator that subcellular damage is present—and that's when subcellular repair might become the solution.
             </p>
           </div>

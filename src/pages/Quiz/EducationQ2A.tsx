@@ -51,13 +51,15 @@ export const EducationQ2A = () => {
             But peer-reviewed research has documented its existence and how these damage patterns can persist indefinitely.**
           </p>
           
-          {/* The Consequence - emphasized - ALTERNATIVE 1: Slight indent with increased font weight */}
+          {/* The Consequence - emphasized - Light background tint style */}
           <p style={{ 
-            fontSize: '1.08rem',
+            fontSize: '1.05rem',
             lineHeight: '1.7',
             color: 'rgba(29, 44, 73, 1)',
-            fontWeight: '600',
-            marginLeft: '16px',
+            fontWeight: '500',
+            backgroundColor: 'rgba(29, 44, 73, 0.04)',
+            padding: '14px 18px',
+            borderRadius: '8px',
             marginBottom: '20px'
           }}>
             This means pain caused by subcellular damage can continue throughout your life—unless the damage is repaired.

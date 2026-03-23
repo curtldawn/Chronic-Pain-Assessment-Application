@@ -58,6 +58,10 @@ On Congratulations pages, the italicized sentence:
 ### Pending Testing
 - [ ] UI automation testing blocked by preview URL unavailability
 
+### Backup Documentation
+- [x] Comprehensive QUIZ_FUNNEL_BACKUP.md generated (1012 lines) with full funnel backup
+- [x] Vertical bar alternative standardized to "light background tint" style across all pages
+
 ---
 
 ## Upcoming Tasks (P1)
@@ -128,5 +132,7 @@ On Congratulations pages, the italicized sentence:
 ---
 
 ## Changelog
+- **Feb 2026**: Generated comprehensive QUIZ_FUNNEL_BACKUP.md (1012 lines) with all branching logic, ad copy, design specs, routing rules
+- **Feb 2026**: Standardized vertical bar alternative style to "light background tint" across EducationQ2A, EducationQ2ANone, and DisqualifiedTooSoon
 - **Feb 15, 2026**: Verified conditional sentence logic through code review and unit testing
 - **Previous Session**: Implemented sessionStorage persistence, internal legal pages, UI/UX overhaul
